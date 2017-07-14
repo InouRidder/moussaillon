@@ -1,0 +1,4 @@
+<!-- app/views/products/show.html.erb -->
+<%= cl_image_tag @product.photo, height: 300, width: 400, crop: :fill %>
+
+<%= image_tag @product.photo.url(:bright_face) %>
