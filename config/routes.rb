@@ -2,11 +2,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  get 'pages/contact'
+  get 'contact' => 'pages#contact'
 
-  get 'pages/home'
+  get 'home' => 'pages#home'
 
-  get 'pages/about'
-
+  get 'about' => 'pages#about'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
