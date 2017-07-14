@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'figaro'
+gem 'cloudinary'
 gem 'carrierwave', '~> 0.11.2'
 
 group :development, :test do
