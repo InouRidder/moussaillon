@@ -27,7 +27,6 @@ body
 /*=======================================================
       IMPORT FILE
 ========================================================*/
-@import url("../fonts/montserrat-fonts.css");
 @import url("animate.css");
 /*=======================================================
       THEME STYLING START
@@ -187,7 +186,7 @@ a:hover, a:focus {
   transform: translate(-50%, -50%);
 }
 .font-playfair {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
@@ -196,16 +195,16 @@ a:hover, a:focus {
   font-family: 'Montserrat', sans-serif;
 }
 .font-hair-line {
-  font-family: 'montserrathairline';
+  font-family: 'Open Sans', sans-serif;
 }
 .font-light {
   font-family: 'montserratlight';
 }
 .font-regular {
-  font-family: 'montserratregular';
+  font-family: 'Montserrat', sans-serif;
 }
 .font-extra-bold {
-  font-family: 'montserratbold';
+  font-family: 'Montserrat', sans-serif;
 }
 .white-bg {
   background: #fff !important;
@@ -587,7 +586,6 @@ header .navbar li.active a:before {
   left: 5px;
   top: 0px;
   color: #000;
-  font-family: 'FontAwesome';
 }
 .ownmenu .dropdown.megamenu .dropdown-menu li {
   display: inline-block;
@@ -714,7 +712,6 @@ header .is-sticky .sticky .nav .dropdown.megamenu .dropdown-menu {
   content: "\f105";
   position: absolute;
   right: 10px;
-  font-family: 'FontAwesome';
   line-height: 33px;
   z-index: 2;
 }
@@ -1118,7 +1115,6 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .cd-nav .drop-menu a.title:before {
   content: "\e873";
-  font-family: 'Linearicons-Free';
   padding: 0px;
   color: #af5875;
   border-radius: 50%;
@@ -3364,7 +3360,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
       SUB BANNER
 ========================================================*/
 .sub-bnr {
-  background: url(../images/sub-bnr-bg.jpg) no-repeat;
+  background: url('sub-bnr-bg.jpg') no-repeat;
   background-size: cover !important;
   min-height: 610px;
   text-align: center;

@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require rs-plugin/settings.css
+ *= require rs-plugin/settings-ie8.css
  */
+
