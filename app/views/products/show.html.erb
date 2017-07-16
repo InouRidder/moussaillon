@@ -24,17 +24,27 @@
               <!-- Images Slider -->
               <div class="images-slider">
                 <ul class="slides">
-                  <li><%= cl_image_tag("uqztqmqm3xymstqyqg5o",
+                  <li> <%= cl_image_tag("moussaillon/images_1_ayxmer",
                   width: 400, height: 300, crop: :fill) %> </li>
                   <li> <%= cl_image_tag("uqztqmqm3xymstqyqg5o",
                   width: 400, height: 300, crop: :fill) %> </li>
-                  <!-- <li data-thumb="images/large-img-3.jpg">      cl_image_tag("uqztqmqm3xymstqyqg5o",
-                  width: 400, height: 300, crop: :fill) %> </li> -->
                 </ul>
+                <!-- <ul class="flex-direction-nav">
+                  <li class="flex-nav-prev"></li>
+                  <li class="flex-nav-next"></li>
+                </ul>
+                <ol class="flex-control-nav flex-control-thumbs">
+                  <li><img src="images/c-img-1.jpg" class="flex-active" draggable=false></li>
+                  <li><img src="# class="flex-active" draggable=false></li>
+                </ol>
+                <ul class="flex-direction-nav">
+                  <li class="flex-nav-prev"></li>
+                  <li class="flex-nav-next"></li>
+                </ul> -->
               </div>
             </div>
 
-            <!-- COntent -->
+            <!-- Content -->
             <div class="col-md-5">
               <h4>wood chair</h4>
               <span class="price"><small>$</small>299</span>
@@ -424,7 +434,7 @@
               <!-- Overlay -->
               <div class="overlay">
                 <div class="position-center-center">
-                  <div class="inn"><a href="images/product-1.jpg" data-lighter><i class="icon-magnifier"></i></a> <a href="#."><i class="icon-basket"></i></a> <a href="#." ><i class="icon-heart"></i></a></div>
+                  <div class="inn"> <%= cl_image_tag("moussaillon/images_1_ayxmer", width: 400, height: 300, crop: :fill) %><i class="icon-magnifier"></i></a> <a href="#."><i class="icon-basket"></i></a> <a href="#." ><i class="icon-heart"></i></a></div>
                 </div>
               </div>
             </div>
@@ -476,7 +486,8 @@
           <!-- Item -->
           <div class="item">
             <!-- Item img -->
-            <div class="item-img"> <img class="img-1" src="images/product-4.jpg" alt="" > <img class="img-2" src="images/product-2.jpg" alt="" >
+            <div class="item-img"> <%= cl_image_tag("uqztqmqm3xymstqyqg5o",
+                  width: 400, height: 300, crop: :fill) %>
               <!-- Overlay -->
               <div class="overlay">
                 <div class="position-center-center">
