@@ -4,6 +4,15 @@ class ProductsController < ApplicationController
     params.require(:product).permit(:name, :description, :photo, :photo_cache)
   end
 
+
+  def new
+    @product = Product.new
+  end
+
+  def create
+  end
+
+  end
   def show
   end
 end
