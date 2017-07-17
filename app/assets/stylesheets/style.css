@@ -42,6 +42,15 @@ body {
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
+
+/* OVER-WRITING CSS CLASSES*/
+.tp-bannertimer {
+  background: none;
+}
+
+.tp-loader.spinner0 {
+  background: none;
+}
 /*=======================================================
       WRAPPER
 ========================================================*/

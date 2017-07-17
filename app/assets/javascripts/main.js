@@ -227,16 +227,18 @@ function checkmail(input){
 /*-----------------------------------------------------------------------------------
     Animated progress bars
 /*-----------------------------------------------------------------------------------*/
-$('.progress-bars').waypoint(function() {
-  $('.progress').each(function(){
-    $(this).find('.progress-bar').animate({
-      width:$(this).attr('data-percent')
-     },100);
-});},
-  {
-  offset: '100%',
-    triggerOnce: true
-});
+
+// Giving waypoint undefined error.
+// $('.progress-bars').waypoint(function() {
+//   $('.progress').each(function(){
+//     $(this).find('.progress-bar').animate({
+//       width:$(this).attr('data-percent')
+//      },100);
+// });},
+//   {
+//   offset: '100%',
+//     triggerOnce: true
+// });
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()

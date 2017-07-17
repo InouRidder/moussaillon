@@ -1097,7 +1097,7 @@
 						if (opt.navigationArrows!="none" && opt.navigationArrows!="nexttobullets") arst = opt.soloArrowStyle;
 
 						function aArrow(dir) {
-							container.parent().append('<div style="'+hidden+'" class="tp-'+dir+'arrow '+starthidearrows+' tparrows '+arst+'"><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>');
+							container.parent().append('<div style="'+hidden+'" class="tp-'+dir+'arrow '+starthidearrows+' tparrows '+arst+'><i class="fa fa-arrow-'+dir+'aria-hidden="true"></i><div class="tp-arr-allwrapper"><div class="tp-arr-iwrapper"><div class="tp-arr-imgholder"></div><div class="tp-arr-imgholder2"></div><div class="tp-arr-titleholder"></div><div class="tp-arr-subtitleholder"></div></div></div></div>');
 						}
 						aArrow("left");
 						aArrow("right");
@@ -3931,7 +3931,7 @@
 												apptxt = apptxt + '<source src="'+videoogv+'" type="video/ogg" />';
 												apptxt = apptxt + '</video>';
 											nextcaption.append(apptxt);*/
-											
+
 											if (nextcaption.data('videoposter')!=undefined)
 												if (nextcaption.data('videoposter') != undefined) apptxt = apptxt + 'poster="'+nextcaption.data('videoposter')+'">';
 												if (videowebm!=undefined && get_browser().toLowerCase()=="firefox") apptxt = apptxt + '<source src="'+videowebm+'" type="video/webm" />';

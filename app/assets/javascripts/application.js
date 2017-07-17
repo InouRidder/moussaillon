@@ -10,21 +10,21 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
-//= require turbolinks
-//= require_tree .
-//= require bootstrap.min.js
-//= require cable.js
 //= require jquery-1.11.3.min.js
 //= require jquery.fatNav.min.js
 //= require jquery.lighter.js
-//= require main.js
+//= require rails-ujs
+//= require turbolinks
+//= require bootstrap.min.js
+//= require_tree .
+//= require cable.js
 //= require modernizr.js
 //= require owl.carousel.min.js
 //= require own-menu.js
 //= require pages.coffee
 //= require smooth-scroll.js
-//= require rs-plugin/js/jquery.themepunch.enablelog.js
-//= require rs-plugin/js/jquery.themepunch.revolution.js
 //= require rs-plugin/js/jquery.tp.min.js
 //= require rs-plugin/js/jquery.tp.t.min.js
+//= require main.js
+//= require rs-plugin/js/jquery.themepunch.enablelog.js
+//= require rs-plugin/js/jquery.themepunch.revolution.js
