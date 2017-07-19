@@ -12,8 +12,12 @@ class ProductsController < ApplicationController
   def create
   end
 
-  end
   def show
   end
+
+  def results
+    @products = Product.search_name_and_description(params[:search])
+  end
+
 end
 
