@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg'
 gem 'pg_search'
 
+gem 'binding_of_caller'
+gem 'better_errors'
 
 
 # Use Capistrano for deployment

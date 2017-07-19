@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get '/show' => 'products#show'
 
-  get '/results' => 'pages#results'
+  get '/results' => 'products#results'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

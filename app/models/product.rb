@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
   include PgSearch
   pg_search_scope :search_name_and_description, against: [:name, :description]
+  pg_search_scope :search_price, against: [:price]
 
   mount_uploader :photo, PhotoUploader
 
