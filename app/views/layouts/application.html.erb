@@ -16,9 +16,11 @@
   </head>
 
   <body>
-    <%= render 'layouts/loader.html.erb' %>
-    <%= render 'layouts/header.html.erb' %>
-    <%= yield %>
-    <%= render 'layouts/footer.html.erb' %>
+      <%#= render 'layouts/loader.html.erb' %>
+    <div id="wrap">
+      <%= render 'layouts/header.html.erb' %>
+      <%= yield %>
+      <%= render 'layouts/footer.html.erb' %>
+    </div>
   </body>
   </html>
