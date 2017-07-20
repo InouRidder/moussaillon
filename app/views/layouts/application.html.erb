@@ -6,19 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
-    <script src="https://use.fontawesome.com/e267d1bbe0.js"></script>
+  <script src="https://use.fontawesome.com/e267d1bbe0.js"></script>
 
-    <title>Moussaillon</title>
-    <%= csrf_meta_tags %>
+  <title>Moussaillon</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
   <body>
-    <%= render 'layouts/loader.html.erb' %>
-    <%= render 'layouts/header.html.erb' %>
-    <%= yield %>
-    <%= render 'layouts/footer.html.erb' %>
+      <%= render 'layouts/loader.html.erb' %>
+    <div id="wrap">
+      <%= render 'layouts/header.html.erb' %>
+      <%= yield %>
+      <%= render 'layouts/footer.html.erb' %>
+    </div>
   </body>
-  </html>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</html>
