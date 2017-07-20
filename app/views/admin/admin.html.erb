@@ -1,0 +1,22 @@
+<div class="row">
+  <h1> Hello World</h1>
+
+  <%= link_to "New Product", new_product_path, class: "btn btn-primary" %>
+  <%= link_to "New Scene", new_scene_path, class: "btn btn-primary" %>
+
+  <% @products.each do |product| %>
+  <div class="product-card">
+    <div class="product-card-name">
+
+    </div>
+    <div class="product-card-description">
+
+    </div>
+    <div class="product-card-price">
+
+    </div>
+
+  </div>
+  <% end %>
+
+</div>
