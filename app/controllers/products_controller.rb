@@ -21,7 +21,7 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
-  end
+
 
   # We need to decide how we are going to filter on type of product.
   # Are we adding a type model, as a product has many types? or will it have one type
