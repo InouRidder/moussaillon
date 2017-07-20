@@ -21,6 +21,8 @@ class ProductsController < ApplicationController
     else
       @products = Product.all
     end
+  end
+
 
 
   # We need to decide how we are going to filter on type of product.
