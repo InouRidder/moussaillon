@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-    @products_banner = @products.banner
+    # @products_banner = @products.banner
   end
 
   def about
