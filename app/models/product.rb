@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+
+  belongs_to :scene, optional: true
+
   include PgSearch
   pg_search_scope :search_name_and_description, against: [:name, :description]
   pg_search_scope :search_price, against: [:price]
