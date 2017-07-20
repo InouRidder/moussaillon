@@ -28,3 +28,5 @@
 //= require main.js
 //= require rs-plugin/js/jquery.themepunch.enablelog.js
 //= require rs-plugin/js/jquery.themepunch.revolution.js
+//= require underscore
+//= require gmaps/google
