@@ -1,0 +1,19 @@
+/*
+// ADMIN CSS
+
+ * It is generally better to create a new file per style scope.
+ *
+ *=
+ *= require_self
+
+ *= require admin/bootstrap-rtl.css
+ *= require admin/bootstrap-rtl.min.css
+ *= require admin/bootstrap.css
+
+ *= require admin/bootstrap.min.css
+ *= require admin/sb-admin-rtl.css
+ *= require admin/sb-admin.css
+
+ */
+
+
