@@ -1,5 +1,5 @@
 class AdminController < ApplicationController
-  layout "simple_layout"
+  layout "admin_layout"
 
   def index # dashboard!
     @products = Product.all

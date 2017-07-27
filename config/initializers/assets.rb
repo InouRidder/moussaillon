@@ -6,6 +6,8 @@ Rails.application.config.assets.version = '1.0'
 
 
 # simple_layout precompilers
+# possible to do without precompiling, just require them in head of admin_layout ?
+
 Rails.application.config.assets.precompile += %w( admin.js )
 Rails.application.config.assets.precompile += %w( admin.css )
 

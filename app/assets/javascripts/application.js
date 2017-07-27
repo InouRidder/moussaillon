@@ -16,7 +16,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require theme/bootstrap.min.js
-//= require_tree .
+
 //= require cable.js
 //= require theme/modernizr.js
 //= require theme/owl.carousel.min.js
