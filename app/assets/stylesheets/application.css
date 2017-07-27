@@ -12,7 +12,16 @@
  *
  *= require_tree .
  *= require_self
+
  *= require rs-plugin/settings.css
  *= require rs-plugin/settings-ie8.css
+
+ *= require theme/animate.css
+ *= require theme/bootstrap.min.css
+ *= require theme/ionicons.min.css
+ *= require theme/main.css
+ *= require theme/responsive.css
+ *= require theme/style.css
+
  */
 
