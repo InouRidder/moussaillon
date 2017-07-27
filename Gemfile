@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg'
 gem 'pg_search'
 
+gem 'simple_form'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 gem "gmaps4rails"

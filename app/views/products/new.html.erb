@@ -1,3 +1,5 @@
+<!-- app/views/products/_form.html.erb -->
+
 <div id="page-wrapper">
 
   <div class="container-fluid">
@@ -6,7 +8,7 @@
     <div class="row">
       <div class="col-lg-12">
         <h1 class="page-header">
-          Products
+          Add a product
         </h1>
         <ol class="breadcrumb">
           <li>
@@ -15,6 +17,9 @@
           <li class="active">
             <i class="fa fa-desktop"></i> Products
           </li>
+          <li>
+            <i class="fa fa-desktop"></i> New
+          </li>
         </ol>
       </div>
     </div>
@@ -22,21 +27,24 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-      <h1>All Products</h1>
-      <ul>
-        <% @products.each do |product| %>
-        <li>
-          <%= product.name %>
-          <%= product.description %>
-          </li>
-        <% end %>
-      </ul>
-      <p><a href="/products/new" class="btn btn-primary btn-lg" role="button"> Add a new product! &raquo;</a>
-      </p>
-    </div>
-
+      <h1>Add Product</h1>
+      <%= simple_form_for(@product) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit class: "btn btn-primary" %>
+      <% end %>
+    </p>
   </div>
-  <!-- /.container-fluid -->
+
+</div>
+<!-- /.container-fluid -->
 
 </div>
 <!-- /#page-wrapper -->
+
+
+
+
+
