@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  layout 'admin_layout', only: [:admin_index, :new]
+  layout 'admin_layout', except: [:index]
 
   def new
     @product = Product.new
