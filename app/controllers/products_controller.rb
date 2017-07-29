@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  layout 'admin_layout', except: [:index]
 
   def new
     @product = Product.new
@@ -9,6 +10,10 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:product_id].to_i)
+  end
+
+  def admin_index
+    @products = Product.all
   end
 
   # was thinking instead of making a shop / index / result page, just do an index one and set the products based on the params. What do you think?

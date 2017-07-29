@@ -12,5 +12,19 @@ Rails.application.routes.draw do
 
   get '/collection' => 'products#index'
 
+  get '/admin' => 'admin#index'
+
+  get '/admin_products' => 'products#admin_index'
+
+  get '/admin_scenes' => 'scenes#admin_index'
+
+  resources :scenes do
+    resources :products, only: [:new, :create, :destroy]
+  end
+
+  resources :products
+
+  # get '/admin' => 'admin#admin'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
