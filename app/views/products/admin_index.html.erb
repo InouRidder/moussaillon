@@ -1,0 +1,45 @@
+<div id="page-wrapper">
+
+  <div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">
+          Products
+        </h1>
+        <ol class="breadcrumb">
+          <li>
+            <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+          </li>
+          <li class="active">
+            <i class="fa fa-desktop"></i> Products
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>All Products</h1>
+      <ul>
+        <% @products.each do |product| %>
+        <li>
+          <a href="">
+            <%= product.name %>
+            <%= product.description %>
+            <%= product.price %>
+          </a>
+        </li>
+        <% end %>
+      </ul>
+      <p><a href="/products/new" class="btn btn-primary btn-lg" role="button"> Add a new product! &raquo;</a>
+      </p>
+    </div>
+
+  </div>
+  <!-- /.container-fluid -->
+
+</div>
+<!-- /#page-wrapper -->

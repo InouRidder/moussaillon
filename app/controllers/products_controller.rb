@@ -1,19 +1,4 @@
 class ProductsController < ApplicationController
-  layout 'admin_layout', except: [:index, :show]
-
-  def new
-    @product = Product.new
-  end
-
-  def create
-   product = Product.new(product_params)
-    if product.save
-      redirect_to product_path(product)
-    else
-      render :new
-    end
-  end
-
 
   def show
     @product = Product.find(params[:id].to_i)
