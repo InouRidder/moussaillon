@@ -1,5 +1,5 @@
-class ScenesController < ApplicationController
-  layout 'admin_layout', except: [:index]
+class AdminScenesController < ApplicationController
+  layout 'admin_layout'
 
   def index
     @scenes = Scene.all

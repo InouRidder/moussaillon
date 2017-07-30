@@ -16,19 +16,11 @@ Rails.application.routes.draw do
 
   get '/admin' => 'admin#index'
 
-  get '/admin_products' => 'products#admin_index'
+  resources :admin_scenes
 
-  get '/admin_scenes' => 'scenes#admin_index'
-
-  get '/admin_show_product/:id' => 'products#show'
-
-  resources :scenes do
-    resources :products, only: [:new, :create, :destroy]
-  end
+  resources :admin_products
 
   resources :products
-
-  # get '/admin' => 'admin#admin'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

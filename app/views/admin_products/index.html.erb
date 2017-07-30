@@ -26,7 +26,7 @@
       <ul>
         <% @products.each do |product| %>
         <li>
-          <a href="">
+          <a href="/admin_products/<%= product.id %>">
             <%= product.name %>
             <%= product.description %>
             <%= product.price %>
@@ -34,7 +34,7 @@
         </li>
         <% end %>
       </ul>
-      <p><a href="/products/new" class="btn btn-primary btn-lg" role="button"> Add a new product! &raquo;</a>
+      <p><a href="/admin_products/new" class="btn btn-primary btn-lg" role="button"> Add a new product! &raquo;</a>
       </p>
     </div>
 
