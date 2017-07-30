@@ -26,8 +26,10 @@
         <ul>
           <% @scenes.each do |scene| %>
             <li>
-              <%= scene.banner %>
-              <%= scene.products %>
+              <a href="">
+                <%= scene.banner %>
+                <%= scene.products %>
+              </a>
             </li>
           <% end %>
         </ul>

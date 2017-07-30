@@ -8,6 +8,9 @@ class AdminScenesController < ApplicationController
   def new
     @scene = Scene.new
   end
+  def show
+    @scene = Scene.find(params[:id])
+  end
 
   def create
   end

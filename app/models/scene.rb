@@ -3,7 +3,7 @@ class Scene < ApplicationRecord
 
   mount_uploader :banner, BannerUploader
 
-  validates :banner, presence: true
+  # validates :banner, presence: true
   validates :title, presence: true
   validates :description, presence: true
 
