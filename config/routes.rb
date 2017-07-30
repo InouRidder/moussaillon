@@ -12,11 +12,15 @@ Rails.application.routes.draw do
 
   get '/collection' => 'products#index'
 
+  # ADMIN ROUTES
+
   get '/admin' => 'admin#index'
 
   get '/admin_products' => 'products#admin_index'
 
   get '/admin_scenes' => 'scenes#admin_index'
+
+  get '/admin_show_product/:id' => 'products#show'
 
   resources :scenes do
     resources :products, only: [:new, :create, :destroy]

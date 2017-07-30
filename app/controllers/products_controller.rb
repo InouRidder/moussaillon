@@ -1,22 +1,35 @@
 class ProductsController < ApplicationController
-  layout 'admin_layout', except: [:index]
+  layout 'admin_layout', except: [:index, :show]
 
   def new
     @product = Product.new
   end
 
   def create
+   product = Product.new(product_params)
+    if product.save
+      redirect_to product_path(product)
+    else
+      render :new
+    end
   end
+
 
   def show
-    @product = Product.find(params[:product_id].to_i)
+    @product = Product.find(params[:id].to_i)
   end
 
+# ADMIN PAGES
   def admin_index
     @products = Product.all
   end
 
-  # was thinking instead of making a shop / index / result page, just do an index one and set the products based on the params. What do you think?
+  def admin_show
+    @product = Product.find(params[:id].to_i)
+  end
+
+
+# was thinking instead of making a shop / index / result page, just do an index one and set the products based on the params. What do you think?
 
   def index
     if query = params[:search]
@@ -38,7 +51,7 @@ class ProductsController < ApplicationController
 private
 
   def product_params
-    params.require(:product).permit(:name, :description, :photo, :photo_cache)
+    params.require(:product).permit(:name, :description, :price, :photo, :photo_cache)
   end
 
   # def set_product
