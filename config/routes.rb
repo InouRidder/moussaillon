@@ -20,9 +20,7 @@ Rails.application.routes.draw do
 
   # ADMIN ROUTES
 
-  devise_for :users do
-    get '/users/sign_out' => 'devise/sessions#destroy'
-  end
+  devise_for :users
 
   get '/admin' => 'admin#index'
 
