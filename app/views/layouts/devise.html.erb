@@ -7,8 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
-  <script src="https://use.fontawesome.com/e267d1bbe0.js"></script>
-
     <%= stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
 
   <title> Admin </title>
@@ -17,10 +15,7 @@
 </head>
 
   <body>
-     <div id="wrapper">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <%= render 'layouts/admin_navbar.html.erb'%>
+    <div class="jumbotron">
       <%= yield %>
     </div>
   </body>

@@ -13,7 +13,6 @@
 //= require theme/jquery-1.11.3.min.js
 //= require theme/jquery.fatNav.min.js
 //= require theme/jquery.lighter.js
-//= require rails-ujs
 //= require turbolinks
 //= require theme/bootstrap.min.js
 
