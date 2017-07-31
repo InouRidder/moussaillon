@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  # PUBLIC ROUTES
+
   root to: 'pages#home'
 
   get '/contact' => 'pages#contact'
@@ -12,6 +14,10 @@ Rails.application.routes.draw do
 
   get '/collection' => 'products#index'
 
+  resources :products
+
+  resources :scenes
+
   # ADMIN ROUTES
 
   get '/admin' => 'admin#index'
@@ -19,10 +25,6 @@ Rails.application.routes.draw do
   resources :admin_scenes
 
   resources :admin_products
-
-  resources :products
-
-  resources :scenes
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
