@@ -1,28 +1,28 @@
 class ScenesController < ApplicationController
-  layout 'admin_layout', except: [:index]
 
   def index
     @scenes = Scene.all
   end
 
-  def new
-    @scene = Scene.new
+  def show
   end
 
+
+# TODO : MOVE BELOW CODE TO ADMINSCENES CONTROLLER
   def create
+   scene = Scene.new(scene_params)
+    if scene.save
+      redirect_to admin_scene_path(scene)
+    else
+      render :new
+    end
   end
 
-  def edit
-  end
 
-  def update
-  end
+private
 
-  def destroy
-  end
-
-  def admin_index
-    @scenes = Scene.all
+  def scene_params
+    params.require(:scene).permit(:title, :description, :banner, :banner_cache)
   end
 
 end

@@ -1,22 +1,9 @@
-class ProductsController < ApplicationController
+class AdminProductsController < ApplicationController
+  layout 'admin_layout'
 
-  def show
-    @product = Product.find(params[:id].to_i)
+  def new
+    @product = Product.new
   end
-
-# was thinking instead of making a shop / index / result page, just do an index one and set the products based on the params. What do you think?
-
-  def index
-    if query = params[:search]
-      @products = Product.search_name_and_description(query)
-    elsif type = params[:type]
-      @products = Product.find_by_type(type)
-    else
-      @products = Product.all
-    end
-  end
-
-# TODO : MOVE BELOW CODE TO ADMIN PRODUCTS CONTROLLER
 
   def create
    product = Product.new(product_params)
@@ -25,6 +12,16 @@ class ProductsController < ApplicationController
     else
       render :new
     end
+  end
+
+
+# ADMIN PAGES
+  def index
+    @products = Product.all
+  end
+
+  def show
+    @product = Product.find(params[:id].to_i)
   end
 
   # We need to decide how we are going to filter on type of product.
@@ -43,4 +40,3 @@ private
   # end
 
 end
-
