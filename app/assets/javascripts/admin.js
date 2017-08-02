@@ -25,7 +25,3 @@
 //= require admin/plugins/morris/morris.js
 //= require admin/plugins/morris/morris.min.js
 //= require admin/plugins/morris/raphael.min.js
-
-//= require rails-ujs
-//= require turbolinks
-//= require cable.js

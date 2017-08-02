@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   # ADMIN ROUTES
 
+  devise_for :users
+
   get '/admin' => 'admin#index'
 
   resources :admin_scenes
@@ -27,4 +29,5 @@ Rails.application.routes.draw do
   resources :admin_products
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 end
