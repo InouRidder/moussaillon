@@ -14,20 +14,21 @@ Rails.application.routes.draw do
 
   get '/collection' => 'products#index'
 
-  resources :products
+  resources :products, only: [:show, :index]
 
-  resources :scenes
+  resources :scenes, only: [:show, :index]
 
   # ADMIN ROUTES
 
   devise_for :users
 
-  get '/admin' => 'admin#index'
+  namespace :admin do
 
-  resources :admin_scenes
+    resources :scenes
+    resources :products
+    resource :dashboard, only: [:show]
 
-  resources :admin_products
-
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end
