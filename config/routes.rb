@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
+  # gem high voltage to use a helper method for static pages
+
   get '/contact' => 'pages#contact'
 
   get '/home' => 'pages#home'
@@ -18,6 +20,10 @@ Rails.application.routes.draw do
 
   resources :scenes, only: [:show, :index]
 
+  # resources :reservations
+  #  member do
+  #  patch :confirm
+  # end
   # ADMIN ROUTES
 
   devise_for :users
