@@ -10,6 +10,13 @@
         <h1 class="page-header">
           <%= @product.name %>
           <small><%= @product.description %></small>
+
+          <!-- -->
+
+          <!-- image of the product, little card -->
+           <%= link_to 'Destroy', admin_product_path(@product),
+            confirm: 'Are you sure?',
+            method: :delete %>
         </h1>
         <ol class="breadcrumb">
           <li>
