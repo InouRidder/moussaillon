@@ -10,9 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery_ujs
 //= require admin/bootstrap.js
 //= require admin/bootstrap.min.js
-//= require admin/jquery.js
+//= require_self
+//= require_tree .
+
 
 //= require admin/plugins/flot/excanvas.min.js
 //= require admin/plugins/flot/flot-data.js
@@ -28,22 +32,3 @@
 
 
 
-//= require theme/jquery-1.11.3.min.js
-//= require theme/jquery.fatNav.min.js
-//= require theme/jquery.lighter.js
-//= require turbolinks
-//= require theme/bootstrap.min.js
-
-//= require cable.js
-//= require theme/modernizr.js
-//= require theme/owl.carousel.min.js
-//= require theme/own-menu.js
-//= require theme/smooth-scroll.js
-//= require pages.coffee
-//= require rs-plugin/js/jquery.tp.min.js
-//= require rs-plugin/js/jquery.tp.t.min.js
-//= require theme/main.js
-//= require rs-plugin/js/jquery.themepunch.enablelog.js
-//= require rs-plugin/js/jquery.themepunch.revolution.js
-//= require underscore
-//= require gmaps/google
