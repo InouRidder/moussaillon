@@ -30,11 +30,14 @@
             <%= product.name %>
             <%= product.description %>
             <%= product.price %>
-            <p><%= link_to 'Destroy this', admin_product_path(product),
+            <p><%= link_to 'Destroy', admin_product_path(product),
             confirm: 'Are you sure?',
             method: :delete,
             :class => "btn btn-danger"%>
             </p>
+             <p><%= link_to 'Edit', edit_admin_product_path(product),
+
+            :class => "btn btn-primary"%></p>
           </a>
         </li>
         <% end %>
