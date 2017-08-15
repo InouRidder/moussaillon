@@ -18,37 +18,48 @@
         </ol>
       </div>
     </div>
-    <!-- /.row -->
+
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
-    <table>
-      <h1>All Products</h1>
-      <ul>
-        <% @products.each do |product| %>
-        <li>
-          <a href="/admin_products/<%= product.id %>">
-            <td><%= product.name %></td>
-            <td><%= product.description %></td>
-            <td><%= product.price %></td>
-            <td><%= link_to 'Destroy', admin_product_path(product),
-            confirm: 'Are you sure?',
-            method: :delete,
-            :class => "btn btn-danger"%>
-            </th>
-             <th><%= link_to 'Edit', edit_admin_product_path(product),
-
-            :class => "btn btn-primary"%></th>
-          </a>
-        </li>
-        <% end %>
+      <table class="table">
         <p><a href="/admin_products/new" class="btn btn-primary" role="button"> Add a new product! &raquo;</a> </p>
-      </ul>
-    </div>
+        <thead>
+          <tr>
+           <th><h2>All products</h2></th>
+         </tr>
+       </thead>
+
+       <% @products.each do |product| %>
+       <a href="/admin_products/<%= product.id %>">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Photo</th>
+          <th>Edit</th>
+          <th>Destroy</th>
+        </tr>
+       </thead>
+      <tbody>
+        <tr>
+          <td><%= product.name %></td>
+          <td><%= product.description %></td>
+          <td><%= product.price %></td>
+          <td><%= product.photo %></td>
+          <td><%= link_to 'Edit', edit_admin_product_path(product),
+            :class => "btn btn-primary"%></td>
+          <td><%= link_to 'Destroy', admin_product_path(product),
+              confirm: 'Are you sure?',
+              method: :delete,
+              :class => "btn btn-danger"%></td>
+        </tr>
+      </tbody>
+      <% end %>
     </table>
   </div>
 
-  <!-- /.container-fluid -->
 
-</div>
-<!-- /#page-wrapper -->
+
+
