@@ -22,29 +22,32 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
+    <table>
       <h1>All Products</h1>
       <ul>
         <% @products.each do |product| %>
         <li>
           <a href="/admin_products/<%= product.id %>">
-            <%= product.name %>
-            <%= product.description %>
-            <%= product.price %>
-            <p><%= link_to 'Destroy', admin_product_path(product),
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+            <td><%= product.price %></td>
+            <td><%= link_to 'Destroy', admin_product_path(product),
             confirm: 'Are you sure?',
             method: :delete,
             :class => "btn btn-danger"%>
-            </p>
-             <p><%= link_to 'Edit', edit_admin_product_path(product),
+            </th>
+             <th><%= link_to 'Edit', edit_admin_product_path(product),
 
-            :class => "btn btn-primary"%></p>
+            :class => "btn btn-primary"%></th>
           </a>
         </li>
         <% end %>
         <p><a href="/admin_products/new" class="btn btn-primary" role="button"> Add a new product! &raquo;</a> </p>
       </ul>
     </div>
+    </table>
   </div>
+
   <!-- /.container-fluid -->
 
 </div>
