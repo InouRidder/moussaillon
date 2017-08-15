@@ -41,9 +41,20 @@ source 'https://rails-assets.org' do
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# For seeding!
+gem 'faker'
+
+# Protection
 gem 'figaro'
+
+# Pictures
 gem 'cloudinary'
 gem 'carrierwave', '~> 0.11.2'
+
+# Search function
+gem "algoliasearch-rails"
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

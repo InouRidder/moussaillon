@@ -28,7 +28,7 @@
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <h1>Add Scene</h1>
-      <%= simple_form_for @scene, :url => url_for(action: 'create', controller: 'admin_scenes'), :method => :post,  html: {class: 'form-horizontal'} do |f| %>
+      <%= simple_form_for @scene, :url => url_for(action: 'create', controller: 'scenes'), :method => :post,  html: {class: 'form-horizontal'} do |f| %>
       <%= f.input :title, :input_html => {class: "form-control", placeholder: "Name" }, label: false %>
       <br>
       <%= f.input :description, :input_html => {class: "form-control", placeholder: "Description" }, label: false %>
