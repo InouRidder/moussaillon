@@ -30,14 +30,20 @@
             <%= product.name %>
             <%= product.description %>
             <%= product.price %>
+            <p><%= link_to 'Destroy', admin_product_path(product),
+            confirm: 'Are you sure?',
+            method: :delete,
+            :class => "btn btn-danger"%>
+            </p>
+             <p><%= link_to 'Edit', edit_admin_product_path(product),
+
+            :class => "btn btn-primary"%></p>
           </a>
         </li>
         <% end %>
+        <p><a href="/admin_products/new" class="btn btn-primary" role="button"> Add a new product! &raquo;</a> </p>
       </ul>
-      <p><a href="/admin_products/new" class="btn btn-primary btn-lg" role="button"> Add a new product! &raquo;</a>
-      </p>
     </div>
-
   </div>
   <!-- /.container-fluid -->
 
