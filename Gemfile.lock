@@ -241,9 +241,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  algoliasearch-rails
   better_errors
   binding_of_caller
-  algoliasearch-rails
   byebug
   capybara (~> 2.13)
   carrierwave (~> 0.11.2)
@@ -252,7 +252,6 @@ DEPENDENCIES
   devise
   faker
   figaro
-
   gmaps4rails
   jbuilder (~> 2.5)
   jquery-rails
