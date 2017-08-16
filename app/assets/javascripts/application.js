@@ -16,16 +16,17 @@
 //= require turbolinks
 //= require theme/bootstrap.min.js
 
+
 //= require cable.js
 //= require theme/modernizr.js
 //= require theme/owl.carousel.min.js
 //= require theme/own-menu.js
 //= require theme/smooth-scroll.js
-//= require pages.coffee
 //= require rs-plugin/js/jquery.tp.min.js
 //= require rs-plugin/js/jquery.tp.t.min.js
 //= require theme/main.js
 //= require rs-plugin/js/jquery.themepunch.enablelog.js
 //= require rs-plugin/js/jquery.themepunch.revolution.js
+
 //= require underscore
 //= require gmaps/google
