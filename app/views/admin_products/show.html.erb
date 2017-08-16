@@ -1,40 +1,35 @@
 <div id="page-wrapper">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-4">
-        <!-- <h1 class="page-header"> -->
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+      <div class="col-sm-6">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
             <div class="card-description">
               <h2><% @product.photo %></h2>
-              </div>
             </div>
-          </div>
+        </div>
+      </div>
 
-          <div class="col-sm-4">
-            <div class="card">
-              <div class= "card-description">
-                  <h2><%= @product.name %></h2>
-                  <h2><%= @product.price %>€</h2>
-                <p><%= @product.description %></p>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-             <div class= "card-description">
-              <p><%= link_to 'Edit', edit_admin_product_path(@product),
-              :class => "btn btn-primary"%></p>
-              <p><%= link_to 'Destroy', admin_product_path(@product),
+      <div class="col-sm-6">
+        <div class="card">
+          <div class= "card-description">
+            <h2><%= @product.name %></h2>
+            <h2><%= @product.price %>€</h2>
+            <p><%= @product.description %></p>
+
+            <%= link_to 'Edit', edit_admin_product_path(@product),
+              :class => "btn btn-primary"%>
+            <%= link_to 'Destroy', admin_product_path(@product),
               confirm: 'Are you sure?',
               method: :delete,
-              :class => "btn btn-danger"%></p>
-              </div>
-            </div>
+              :class => "btn btn-danger"%>
           </div>
+        </div>
+      </div>
 
-          <div class="col-xs-12">
-          <ol class="breadcrumb">
-            <li>
+  <div class= "row"></div>
+      <div class="col-xs-12">
+        <ol class="breadcrumb">
+          <li>
               <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
             </li>
             <li class="active">
@@ -43,7 +38,7 @@
           </ol>
           </div>
         </div>
-      </div>
+        </div>
     </div>
   </div>
 </div>
