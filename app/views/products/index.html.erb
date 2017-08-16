@@ -59,6 +59,7 @@
               <!-- Item Name -->
               <div class="item-name"> <a href="#."><%= product.name %></a>
                 <p><%= product.description %></p>
+                <%= link_to 'see the product', show_path(@product) %>
               </div>
               <!-- Price -->
               <span class="price"><small>$</small><%= product.price %></span> </div>
