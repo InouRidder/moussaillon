@@ -12,8 +12,6 @@ Rails.application.routes.draw do
 
   get '/about' => 'pages#about'
 
-  get '/show' => 'products#show'
-
   get '/collection' => 'products#index'
 
   resources :products, only: [:show, :index]
