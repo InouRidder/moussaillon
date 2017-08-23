@@ -3,8 +3,8 @@ class Product < ApplicationRecord
   belongs_to :scene, optional: true
 
   include PgSearch
-  pg_search_scope :search_name_and_description, against: [:name, :description]
-  pg_search_scope :search_price, against: [:price]
+  pg_search_scope :search_name_and_description, against: [:name, :description, :category], using: {tsearch: {prefix: true, dictionary: "english"}}
+  # pg_search_scope :search_price, against: [:price]
   pg_search_scope :find_by_category, against: [:category]
 
   mount_uploader :photo, PhotoUploader
