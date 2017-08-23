@@ -1,7 +1,8 @@
 class ScenesController < ApplicationController
 
   def show
-    @scene = Scene.find(params[:id].to_i)
+    @scene = Scene.find(params[:id])
+    @scene.products
   end
 
   def index
