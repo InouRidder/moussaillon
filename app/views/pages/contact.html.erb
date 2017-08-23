@@ -110,7 +110,7 @@
           </div>
         </section>
         <!-- Begin Map Script -->
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDSM4gyrCimLCcn8jgWw5tQldPWTqSfw8w"></script>
+    <script src="https://maps.google.com/maps/api/js?key=#{ENV['GOOGLE_MAP_API']}"></script>
         <script type="text/javascript">
           /*==========  Map  ==========*/
           <% content_for(:after_js) do %>
