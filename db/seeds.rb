@@ -13,6 +13,6 @@ Product.destroy_all
 end
 
 10.times do
-  Product.create(name: "ninou", description: "A papillon", price: rand(100), scene: Scene.all.sample)
+  Product.create(name: "ninou", description: "A papillon", price: rand(100), scene: Scene.all.sample, photo: "https:/unsplash.it/300/300")
 end
 
