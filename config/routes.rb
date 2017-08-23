@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get '/about' => 'pages#about'
 
+
   get '/collection' => 'products#index'
 
   resources :products, only: [:show]
@@ -19,6 +20,8 @@ Rails.application.routes.draw do
   resources :scenes, only: [:show, :index]
 
   # ADMIN ROUTES
+
+  get '/admin' => 'admin/dashboards#show' # I added this route because I kept typing it.
 
   devise_for :users
 
