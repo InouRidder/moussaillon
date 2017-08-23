@@ -1,74 +1,88 @@
+ <!-- Popular Products -->
+ <section class="shop-page padding-top-100 padding-bottom-100">
+  <div class="container">
+    <div class="item-display">
 
-<!--  TO DO  -->
-<!-- add pictures to products -->
-<!-- add the correct product page link -->
-
-
-<!-- Content -->
-<div id="content">
-
-  <!-- Popular Products -->
-  <section class="shop-page padding-top-100 padding-bottom-100">
-    <div class="container">
-      <div class="item-display">
-        <div class="row">
-          <div class="col-xs-6"> <span class="product-num">Showing 1 - 10 of <%= @products.length %> products</span> </div>
-
-          <!-- Products Select -->
-          <div class="col-xs-6">
-            <div class="pull-right">
-
-              <!-- Short By -->
-              <select class="selectpicker">
-                <option>Short By</option>
-                <option>Short By</option>
-                <option>Short By</option>
-              </select>
-              <!-- Filter By -->
-              <select class="selectpicker">
-                <option>Filter By</option>
-                <option>Short By</option>
-                <option>Short By</option>
-              </select>
-
-              <!-- GRID & LIST -->
-              <a href="#." class="grid-style"><i class="icon-grid"></i></a> <a href="#." class="list-style"><i class="icon-list"></i></a> </div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <span class="product-num">
+            Showing 1 - of <%= @products.count %> products
+          </span>
         </div>
 
-        <!-- Popular Item Slide -->
-        <div class="papular-block row">
+        <!-- Products Select -->
+        <div class="col-xs-6">
+          <div class="pull-right">
+
+            <!-- Short By -->
 
 
-          <% @products.each do |product| %>
-          <!-- Item -->
-          <div class="col-md-3">
-            <div class="item">
-              <!-- Item img -->
-              <div class="item-img"> <img class="img-1" src="https://unsplash.it/200/300
-                " alt="" > <img class="img-2" src="https://unsplash.it/200/300
-                " alt="" >
-                <!-- Overlay -->
-                <div class="overlay">
-                  <div class="position-center-center">
-                    <div class="inn"><a href="images/product-2-1.jpg" data-lighter><i class="icon-magnifier"></i></a> <a href="#."><i class="icon-basket"></i></a> <a href="#" ><i class="icon-heart"></i></a></div>
-                  </div>
-                </div>
-              </div>
-              <!-- Item Name -->
-              <div class="item-name"> <a href="/products/<%= product.id %>"><%= product.name %></a>
-                <p><%= product.description %></p>
-                <%= link_to 'see the product', show_path(@product) %>
-              </div>
-              <!-- Price -->
-              <span class="price"><small>$</small><%= product.price %></span> </div>
-            </div>
-            <% end %>
+            <select class="selectpicker" onchange="location = this.href">
+              <option><%= link_to 'All', collection_path %></option>
+              <option><%= link_to 'Couches', collection_path(type: "couch") %></option>
+              <option><%= link_to 'Bars', collection_path(type: "bar") %></option>
+              <option><%= link_to 'Tables', collection_path(type: "table" ) %></option>
+              <option><%= link_to 'Chairs', collection_path(type: "chair" ) %></option>
+            </select>
+            <!-- Filter By -->
+            <select class="selectpicker">
+              <option>Filter By</option>
+              <option>Short By</option>
+              <option>Short By</option>
+            </select>
+
+            <!-- GRID & LIST -->
           </div>
         </div>
-      </section>
+      </div>
 
+      <!-- Popular Item Slide -->
 
+      <div class="shop-items row">
 
+        <% @products.each do |product| %>
+
+        <!-- Item -->
+        <div class="col-md-6">
+          <div class="item">
+            <!-- Item Name -->
+            <div class="item-name"> <a href="#."><%= product.name %></a>
+              <p><%= product.description %></p>
+            </div>
+            <!-- Item img -->
+            <%= link_to product_path(product) do %>
+            <div class="item-img">
+              <img class="img-1" src=<%= product.photo unless product.photo.blank? %> alt="" style="width: 100%; height: 400px;">
+              <div class="inn">
+                <a href="https://unsplash.it/200/300" data-lighter> By Ludo <a href="#.">
+                  <i class="icon-basket">
+                  </i>
+                </a>
+                <a href="#." >
+                  <i class="icon-heart">
+                  </i>
+                </a>
+              </a>
+            </div>
+          </div>
+          <% end %>
+          <!-- Price -->
+          <span class="price"><small>$</small><%= product.price %></span>
+        </div>
+      </div>
+      <% end %>
+
+        <!-- Pagination -->
+        <ul class="pagination in-center">
+          <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
 
