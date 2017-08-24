@@ -22,46 +22,51 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
+      <div class="container">
       <table class="table table-striped table-hover">
-        <p><a href="/admin/products/new" class="btn btn-primary" role="button"> Add a new product! &raquo;</a> </p>
-        <thead z>
-          <tr>
-           <th><h2>All products</h2></th>
-         </tr>
-       </thead>
+          <p><a href="/admin/products/new" class="btn btn-primary" role="button"> Add a new product! &raquo;</a> </p>
+          <thead z>
+            <tr>
+             <th><h2>All products</h2></th>
+           </tr>
+         </thead>
 
-       <% @products.each do |product| %>
-       <a href="/admin_products/<%= product.id %>">
-      <thead class="thead-inverse">
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Photo</th>
-          <th>Show</th>
-          <th>Edit</th>
-          <th>Destroy</th>
-        </tr>
-       </thead>
-      <tbody>
-        <tr>
-          <td><%= product.name %></td>
-          <td><%= product.description %></td>
-          <td><%= product.price %></td>
-          <td><%= product.photo %></td>
-          <td><%= link_to 'Show', admin_product_path(product),
-            :class => "btn btn-primary"%></td>
-          <td><%= link_to 'Edit', edit_admin_product_path(product),
-            :class => "btn btn-warning"%></td>
-          <td><%= link_to 'Destroy', admin_product_path(product),
-              confirm: 'Are you sure?',
-              method: :delete,
-              :class => "btn btn-danger"%></td>
-        </tr>
-      </tbody>
-      <% end %>
-    </table>
-  </div>
+         <% @products.each do |product| %>
+         <thead class="thead-inverse">
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Photo</th>
+            <th>Show</th>
+            <th>Edit</th>
+            <th>Destroy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+            <td><%= product.price %></td>
+            <td><%= product.photo %></td>
+            <td><%= link_to 'Show', admin_product_path(product),
+              :class => "btn btn-primary"%></td>
+              <td><%= link_to 'Edit', edit_admin_product_path(product),
+                :class => "btn btn-warning"%></td>
+                <td><%= link_to 'Destroy', admin_product_path(product),
+                  confirm: 'Are you sure?',
+                  method: :delete,
+                  :class => "btn btn-danger"%></td>
+                </tr>
+              </tbody>
+              <% end %>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 
 
