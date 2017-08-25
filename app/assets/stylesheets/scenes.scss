@@ -1,3 +1,33 @@
 // Place all the styles related to the scenes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.scene-banner-show {
+  position: relative;
+  width: 100%;
+}
+
+.next-button {
+  position: absolute;
+  top: 40%;
+  right: 5px;
+}
+
+.previous-button {
+  position: absolute;
+  top: 40%;
+  left: 5px;
+}
+
+.rotation-button {
+  color: #F0F0F0;
+  opacity: 0.9;
+  padding: 23px;
+  border-radius: 4px;
+  align-text: center;
+}
+
+.rotation-button:hover {
+  color: #2C3A4C;
+  background-color: lightgrey;
+}

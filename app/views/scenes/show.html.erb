@@ -1,17 +1,13 @@
 <!--======= SUB BANNER =========-->
 <section class="sub-bnr" data-stellar-background-ratio="0.5">
-  <div class="position-center-center" style="background-image: url('<%= @scene.banner %>')"">
+  <div class="position-center-center scene-banner-show" style="background-image: url('<%= @scene.banner %>')"">
+  <div class="heading text-center">
+    <h4><%= @scene.title %></h4>
   </div>
+    <%= link_to "", scene_path(@previous_scene), class: "fa fa-arrow-left fa-3x previous-button rotation-button" %>
+    <%= link_to "", scene_path(@next_scene), class: "fa fa-arrow-right fa-3x next-button rotation-button" %>
+</div>
 </section>
-
-<section class="our-team light-gray-bg padding-top-150 padding-bottom-100">
-  <div class="container">
-    <div class="heading text-center">
-      <h4><%= @scene.title %></h4>
-    </div>
-  </div>
-</section>
-
 
 <!-- Popular Products -->
 <section class="padding-top-100 padding-bottom-100">
