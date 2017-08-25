@@ -15,9 +15,10 @@ Rails.application.routes.draw do
 
   get '/collection' => 'products#index'
 
+
   resources :products, only: [:show]
 
-  resources :scenes, only: [:show, :index]
+  resources :scenes, only: [:show]
 
   # ADMIN ROUTES
 
