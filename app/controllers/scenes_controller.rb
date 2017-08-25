@@ -21,6 +21,7 @@ class ScenesController < ApplicationController
       previous_id = array_all_id.last
     end
 
+
     @next_scene = Scene.find(next_id)
     @previous_scene = Scene.find(previous_id)
   end
