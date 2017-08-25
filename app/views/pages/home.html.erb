@@ -22,7 +22,7 @@
             data-elementdelay="0.1"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">The Latest Product from ecoshop</div>
+            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "The Latest Scene by Ludo".reverse %></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfl font-extra-bold tp-resizeme"
             data-x="left" data-hoffset="0"
@@ -35,7 +35,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:80px; color:#2d3a4b; text-transform:uppercase; white-space: nowrap;"><small class="font-regular">$</small>299 </div>
+            style="z-index: 6; font-size:80px; color:#2d3a4b; text-transform:uppercase; white-space: nowrap;"></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-extra-bold tp-resizeme"
             data-x="left" data-hoffset="0"
@@ -48,7 +48,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;">featured </div>
+            style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "Featured".reverse %> </div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-extra-bold tp-resizeme"
             data-x="left" data-hoffset="0"
@@ -61,7 +61,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;">cycle </div>
+            style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "Product".reverse %> </div>
             <!-- LAYER NR. 4 -->
             <div class="tp-caption lfb tp-resizeme"
             data-x="left" data-hoffset="0"
@@ -73,7 +73,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><a href="#." class="btn">SHOP NOW</a> </div>
+            style="z-index: 8;"><%= link_to "Lastest Scene", scene_path(Scene.last), class: "btn" %> </div>
           </li>
 
           <!-- SLIDE  -->
@@ -93,7 +93,7 @@
             data-elementdelay="0.1"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">The Latest Product from ecoshop</div>
+            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "The Latest Product from ecoshop".reverse %></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-regular tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
@@ -106,7 +106,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;">look beautiful </div>
+            style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "have beautiful".reverse  %></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
@@ -119,7 +119,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:140px; color:#fff; text-transform:uppercase; white-space: nowrap;">this season </div>
+            style="z-index: 6; font-size:140px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "furniture".reverse  %></div>
             <!-- LAYER NR. 4 -->
             <div class="tp-caption sfb font-extra-bold tp-resizeme"
             data-x="center" data-hoffset="120"
@@ -132,7 +132,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:60px; color:#fff; text-transform:uppercase; white-space: nowrap;"><small class="font-regular">$</small> 299 </div>
+            style="z-index: 6; font-size:60px; color:#fff; text-transform:uppercase; white-space: nowrap;"></div>
             <!-- LAYER NR. 4 -->
             <div class="tp-caption lfb tp-scrollbelowslider tp-resizeme"
             data-x="center" data-hoffset="-120"
@@ -144,57 +144,73 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><a href="#." class="btn">BUY NOW</a> </div>
+            style="z-index: 8;"><%= link_to "Lastest Product", product_path(Product.last), class: "btn" %> </div>
           </li>
         </ul>
       </div>
     </div>
   </section>
 
-                    <!-- Knowledge Share -->
-                    <section class="light-gray-bg padding-top-150 padding-bottom-150">
-                      <div class="container">
+  <!-- Knowledge Share -->
+  <section class="light-gray-bg padding-top-150 padding-bottom-150">
+    <div class="container">
 
-                        <!-- Main Heading -->
-                        <div class="heading text-center">
-                          <h4>knowledge share</h4>
-                          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula.
-                            Sed feugiat, tellus vel tristique posuere, diam</span> </div>
-                            <div class="knowledge-share">
-                              <ul class="row">
+      <!-- Main Heading -->
+      <div class="heading text-center">
+        <h4>Moussaillon</h4>
+        <span>Something about my amazing wood carving techniques</span> </div>
+        <div class="knowledge-share">
+          <ul class="row">
 
-                                <!-- Post 1 -->
-                                <li class="col-md-6">
-                                  <div class="date"> <span>December</span> <span class="huge">27</span> </div>
-                                  <a href="#.">Donec commo is vulputate</a>
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. Sed feugiat, tellus vel tristique posuere, diam</p>
-                                  <span>By <strong>Admin</strong></span> </li>
+            <!-- Post 1 -->
+            <li class="col-md-6">
+              <div class="date">
+               <span>
+                 Ludo
+               </span>
+               <span class="huge">
 
-                                  <!-- Post 2 -->
-                                  <li class="col-md-6">
-                                    <div class="date"> <span>December</span> <span class="huge">09</span> </div>
-                                    <a href="#.">Donec commo is vulputate</a>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus maximus vehicula. Sed feugiat, tellus vel tristique posuere, diam</p>
-                                    <span>By <strong>Admin</strong></span> </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </section>
+               </span>
+             </div>
+             <a href="#.">
+              Wood Table
+            </a>
+            <p>
+              What about your latest work here
+            </p>
+            <span>
+              By
+              <strong>
+                Ludo
+              </strong>
+            </span>
+          </li>
 
+          <!-- Post 2 -->
+          <li class="col-md-6">
+            <div class="date">
+             <span>
+               Ludo
+             </span>
+             <span class="huge">
+             </span>
+           </div>
+           <a href="#.">
+            Wood Table
+          </a>
+          <p>
+            What about your latest work here
+          </p>
+          <span>
+            By
+            <strong>
+              Ludo
+            </strong>
+          </span>
+        </li>
 
-<!--
-
-                              <section class="news-letter padding-top-150 padding-bottom-150">
-                                <div class="container">
-                                  <div class="heading light-head text-center margin-bottom-30">
-                                    <h4>NEWSLETTER</h4>
-                                    <span>Phasellus lacinia fermentum bibendum. Interdum et malesuada fames ac ante ipsumien lacus, eu posuere odi </span> </div>
-                                    <form>
-                                      <input type="email" placeholder="Enter your email address" required>
-                                      <button type="submit">SEND ME</button>
-                                    </form>
-                                  </div>
-                                </section>
-                              </div> -->
-
+      </ul>
+    </div>
+  </div>
+</section>
 

@@ -1,51 +1,52 @@
 
-    <!-- Content -->
-    <div id="content">
+<!-- Content -->
+<div id="content">
 
-      <!-- Popular Products -->
-      <section class="padding-top-100 padding-bottom-100">
-        <div class="container">
+  <!-- Popular Products -->
+  <section class="padding-top-100 padding-bottom-100">
+    <div class="container">
 
-          <!-- SHOP DETAIL -->
-          <div class="shop-detail">
-            <div class="row">
+      <!-- SHOP DETAIL -->
+      <div class="shop-detail">
+        <div class="row">
 
-              <!-- Popular Images Slider -->
-              <div class="col-md-10">
-                <!-- INFOMATION -->
-                <div class="inner-info text center">
-                  <h6 class= "text-center" ><%= @product.name %></h6>
-                  <p class= "text-center"><%= cl_image_tag("uqztqmqm3xymstqyqg5o",
-                    width: 400, height: 300, crop: :fill) %></p>
-                  </div>
-                </div>
+          <!-- Popular Images Slider -->
+          <div class="col-md-12">
+            <!-- INFOMATION -->
+            <div class="inner-info text center">
+              <h6 class= "text-center" ><%= @product.name %></h6>
+              <p class= "text-center"><%= cl_image_tag("uqztqmqm3xymstqyqg5o",
+                width: 400, height: 300, crop: :fill) %></p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    </section>
 
-        <!--======= PRODUCT DESCRIPTION =========-->
-        <div class="container">
-        <div class="item-decribe">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
-            <li role="presentation" class="active"><a href="#descr" role="tab" data-toggle="tab">DESCRIPTION</a></li>
-          </ul>
+    <!--======= PRODUCT DESCRIPTION =========-->
+    <div class="container">
+      <div class="item-decribe">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
+          <li role="presentation" class="active"><a href="#descr" role="tab" data-toggle="tab">DESCRIPTION</a></li>
+        </ul>
 
-          <!-- Tab panes -->
-          <div class="tab-content animate fadeInUp pull-left" data-wow-delay="0.4s">
-            <!-- DESCRIPTION -->
-            <p><%= @product.description %></p>
+        <!-- Tab panes -->
+        <div class="tab-content animate fadeInUp pull-left" data-wow-delay="0.4s">
+          <!-- DESCRIPTION -->
+          <p><%= @product.description %></p>
 
-            <!-- TAGS -->
-            <div role="tabpanel" class="tab-pane fade" id="tags"> </div>
-          </div>
+          <!-- TAGS -->
+          <div role="tabpanel" class="tab-pane fade" id="tags"> </div>
         </div>
       </div>
     </div>
-    </div>
-    <!-- TAGS -->
-    <div role="tabpanel" class="tab-pane fade" id="tags"> </div>
   </div>
+</div>
+<!-- TAGS -->
+<div role="tabpanel" class="tab-pane fade" id="tags"> </div>
+</div>
 </div>
 
