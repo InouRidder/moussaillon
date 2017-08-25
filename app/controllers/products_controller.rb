@@ -9,20 +9,17 @@ class ProductsController < ApplicationController
   def index
     if query = params[:search]
       @products = Product.search_name_and_description(query)
+      @info_title = "Results for #{query}"
     elsif type = params[:type]
-      @products = Product.find_by_type(type)
+      @products = Product.find_by_category(type)
+      @products.count > 1
+      type = type.pluralize
+      @info_title = type
     else
       @products = Product.all
+      @info_title = nil
     end
   end
-
-# TODO : MOVE BELOW CODE TO ADMIN PRODUCTS CONTROLLER
-
-
-  # We need to decide how we are going to filter on type of product.
-  # Are we adding a type model, as a product has many types? or will it have one type
-  # do we want it in a seperate model?
-  # lets find out whats best for processing speed <-
 
 end
 

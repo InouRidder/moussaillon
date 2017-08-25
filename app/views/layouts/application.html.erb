@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
+
   <script src="https://use.fontawesome.com/e267d1bbe0.js"></script>
 
   <title>Moussaillon</title>
@@ -27,8 +30,6 @@
 
   <%= javascript_include_tag "https://maps.google.com/maps/api/js" %>
   <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
-  <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
-
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <%= yield(:after_js) %>
 </html>

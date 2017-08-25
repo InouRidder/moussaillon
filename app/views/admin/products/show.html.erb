@@ -15,6 +15,7 @@
             <h2><%= @product.name %></h2>
             <h2><%= @product.price %>€</h2>
             <p><%= @product.description %></p>
+            <p><%= @product.category %></p>
 
             <%= link_to 'Edit', edit_admin_product_path(@product),
               :class => "btn btn-primary"%>
