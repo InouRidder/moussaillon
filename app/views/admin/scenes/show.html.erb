@@ -2,11 +2,11 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
+     <%= cl_image_tag @scene.banner unless @scene.banner.blank? %>
        <h1 class="page-header">
           <%= @scene.title %>
           <%= @scene.description %>
         </h1>
-     <%= cl_image_tag @scene.banner unless @scene.banner.blank? %>
       </div>
      </div>
    <div class="row">
