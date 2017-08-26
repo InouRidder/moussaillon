@@ -10,13 +10,12 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_tree
 //= require jquery
 //= require jquery_ujs
 //= require admin/bootstrap.js
 //= require admin/bootstrap.min.js
 //= require_self
-//= require_tree .
-
 
 //= require admin/plugins/flot/excanvas.min.js
 //= require admin/plugins/flot/flot-data.js

@@ -18,8 +18,7 @@
 
   <body>
      <div id="wrapper">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+      <%= render 'layouts/notices.html.erb' %>
       <%= render 'layouts/admin_navbar.html.erb'%>
       <%= yield %>
     </div>

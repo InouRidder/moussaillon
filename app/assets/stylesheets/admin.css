@@ -6,4 +6,5 @@
  *= require_self
  *= require admin/bootstrap.min.css
  *= require admin/sb-admin.css
+ *= require admin/simple_form.scss
  */

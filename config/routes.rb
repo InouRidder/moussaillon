@@ -22,9 +22,12 @@ Rails.application.routes.draw do
 
   # ADMIN ROUTES
 
+  # delete '/users/sign_out' => 'devise/sessions#destroy'
+
   get '/admin' => 'admin/dashboards#show' # I added this route because I kept typing it.
 
   devise_for :users
+
 
   namespace :admin do
 

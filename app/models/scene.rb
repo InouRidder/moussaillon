@@ -1,5 +1,5 @@
 class Scene < ApplicationRecord
-  has_many :products
+  has_many :products, dependent: :nullify
 
   mount_uploader :banner, BannerUploader
 
