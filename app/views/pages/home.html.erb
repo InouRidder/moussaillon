@@ -73,7 +73,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= link_to "Lastest Scene", scene_path(Scene.last), class: "btn" %> </div>
+            style="z-index: 8;"><%= link_to "Lastest Scene", scene_path(Scene.last), class: "btn" if Scene.last %> </div>
           </li>
 
           <!-- SLIDE  -->
