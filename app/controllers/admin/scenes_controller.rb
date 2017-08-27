@@ -50,7 +50,13 @@ module Admin
     end
 
     def remove_product
-      raise
+      product = Product.find(params[:id])
+      scene = product.scene
+      product.scene_id = nil
+      if product.save
+        redirect_to admin_scene_path(scene)
+        flash[:notice] = product.name + " removed!"
+      end
     end
 
     def destroy
