@@ -144,7 +144,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= link_to "Lastest Product", product_path(Product.last), class: "btn" %> </div>
+            style="z-index: 8;"><%= link_to "Lastest Product", product_path(Product.last), class: "btn" if Product.last%> </div>
           </li>
         </ul>
       </div>
