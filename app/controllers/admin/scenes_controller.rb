@@ -2,7 +2,8 @@ module Admin
   class ScenesController < BaseController
   layout 'admin'
   before_action :authenticate_user!
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :set_scene, only: [:show, :edit, :update, :destroy, :add_product]
+
     def new
       @scene = Scene.new
     end
@@ -22,33 +23,44 @@ module Admin
 
     def show
       @products = Product.all - @scene.products
-      # @scene = Scene.find(params[:id])
     end
 
     def edit
-      # @scene = Scene.find(params[:id])
     end
 
     def update
-      # @scene = Scene.find(params[:id])
-      if product_id = params["scene"]["products"]
-        product = Product.find(product_id)
-        product.scene = @scene
-        product.save
-      end
       @scene.update(scene_params)
       redirect_to admin_scene_path(@scene)
     end
 
+    def add_product
+      product_id = params[:scene].fetch(:products)
+      unless product_id == ""
+        product = Product.find(product_id)
+        product.scene = @scene
+        if product.save
+          redirect_to admin_scene_path(@scene)
+        else
+          render :show
+        end
+      else
+        flash[:alert] = "Don't forget to add a product!"
+        render :show
+      end
+    end
+
+    def remove_product
+      raise
+    end
+
     def destroy
-       # @scene = Scene.find(params[:id])
       @scene.destroy
       redirect_to admin_scenes_path
     end
 
   private
 
-     def set_product
+     def set_scene
       @scene = Scene.find(params[:id])
     end
 
