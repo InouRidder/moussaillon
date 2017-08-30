@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/carrierwaveuploader/carrierwave.git
+  revision: 7389a82f17d2547766c290b6f1398c9da794353b
+  specs:
+    carrierwave (1.1.0)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -66,12 +75,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    carrierwave (0.11.2)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
-      mime-types (>= 1.16)
-      mimemagic (>= 0.3.0)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
     cloudinary (1.6.0)
@@ -130,7 +133,6 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.2)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
     multi_json (1.12.1)
@@ -246,7 +248,7 @@ DEPENDENCIES
   binding_of_caller
   byebug
   capybara (~> 2.13)
-  carrierwave (~> 0.11.2)
+  carrierwave!
   cloudinary
   coffee-rails (~> 4.2)
   devise

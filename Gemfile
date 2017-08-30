@@ -50,7 +50,7 @@ gem 'figaro'
 
 # Pictures
 gem 'cloudinary'
-gem 'carrierwave', '~> 0.11.2'
+gem 'carrierwave', github:'carrierwaveuploader/carrierwave'
 
 # Search function
 gem "algoliasearch-rails"

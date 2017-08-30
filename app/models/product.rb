@@ -7,7 +7,8 @@ class Product < ApplicationRecord
   # pg_search_scope :search_price, against: [:price]
   pg_search_scope :find_by_category, against: [:category]
 
-  mount_uploader :photo, PhotoUploader
+
+  mount_uploaders :pictures, PictureUploader
 
   validates :name, presence: true
   validates :description, presence: true

@@ -5,7 +5,7 @@
      <div class= "col-xs-12 col-sm-6 col-sm-offset-3">
        <!-- TODO: GOOGLE SYNTAX TO SEND DATA TO ADMIN_CONTROLLER -->
        <h1>Edit Product</h1>
-       <%= simple_form_for @product, :url => url_for(:action => 'create', :controller => 'products'), :method => :post,  html: {class: 'form-horizontal'} do |f| %>
+       <%= simple_form_for @product, :url => url_for(:action => 'update', :controller => 'products'), :method => :patch,  html: { multipart: true, class: 'form-horizontal'} do |f| %>
        <%= f.input :name, :input_html => {class: "form-control", placeholder: "Name" }, label: false %>
        <br>
        <%= f.input :description, :input_html => {class: "form-control", placeholder: "Description" }, label: false %>
@@ -14,12 +14,15 @@
        <br>
         <%= f.input :category, collection: ["chair", "table", "bar", "couch"], :input_html => {class: "form-control", label: "Category"  } %>
         <br>
-      <%= f.input :photo, :input_html => { class: "form-control-file" } %>
-       <%= f.input :photo_cache, as: :hidden  %>
+      <%= f.input_field :pictures, :multiple => true, as: :file, name: "product[pictures][]" %>
        <br>
        <%= f.submit class: "btn btn-primary" %>
        <% end %>
+
+
      </div>
    </div>
  </div>
 </div>
+
+<!-- post[post_attachments_attributes][][media] -->
