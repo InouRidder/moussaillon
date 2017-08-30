@@ -15,4 +15,5 @@ class Product < ApplicationRecord
   validates :price, presence: true
   validates :category, presence: true, inclusion: ["chair", "table", "couch", "bar"]
 
+
 end

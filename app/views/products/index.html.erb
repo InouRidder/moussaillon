@@ -50,8 +50,8 @@
             <!-- Item img -->
             <%= link_to product_path(product) do %>
             <div class="item-img">
-              <!-- <img class="img-1" src=< pictures_tag product.pictures unless product.pictures.blank? %> alt="" style="width: 100%; height: 400px;"> -->
-              <p><%= product.pictures.first.url unless product.pictures.first.nil? %><p>
+              <img class="img-1" src= "<%=image_tag product.pictures.first.url unless product.pictures.blank? %>"" alt="" style="width: 100%; height: 400px;">
+
               <div class="inn">
                 <a href="https://unsplash.it/200/300" data-lighter> See more <a href="#.">
                   <i class="icon-basket">
