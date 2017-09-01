@@ -17,6 +17,7 @@
               <h6 class= "text-center" ><%= @product.name %></h6>
               <p class= "text-center"><%= cl_image_tag("uqztqmqm3xymstqyqg5o",
                 width: 400, height: 300, crop: :fill) %></p>
+ <p class="text-center"><%=link_to "BUY NOW", contact_path, class: "btn-buy"%></p>
               </div>
             </div>
           </div>
@@ -30,7 +31,11 @@
       <div class="item-decribe">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
-          <li role="presentation" class="active"><a href="#descr" role="tab" data-toggle="tab">DESCRIPTION</a></li>
+          <li role="presentation" class="active">
+          <a href="#descr" role="tab" data-toggle="tab">DESCRIPTION
+          </a>
+          </li>
+
         </ul>
 
         <!-- Tab panes -->
