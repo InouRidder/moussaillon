@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
 
+ has_attachments :photos, maximum: 5
   def show
     @product = Product.find(params[:id].to_i)
   end

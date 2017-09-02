@@ -32,8 +32,14 @@ gem 'simple_form'
 gem 'devise'
 gem 'jquery-rails'
 
+
+gem 'cloudinary', '1.1.7'
+gem 'attachinary', github: 'assembler/attachinary'
+gem 'jquery-fileupload-rails'
+gem 'coffee-rails'
+
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+
 gem "gmaps4rails"
 
 source 'https://rails-assets.org' do
@@ -48,8 +54,6 @@ gem 'faker'
 # Protection
 gem 'figaro'
 
-# Pictures
-gem 'cloudinary'
 
 # Search function
 gem "algoliasearch-rails"

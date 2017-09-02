@@ -2,7 +2,9 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
-         <%= cl_image_tag @scene.banner, height: 500, width: 900 unless @scene.banner.blank? %>
+         <% if @scene.banner? %>
+          <%= cl_image_tag @scene.banner.path, width: 200, height: 300, crop: :fill %>
+          <% end %>
          <h1 class="page-header">
           <%= @scene.title %>
           <%= @scene.description %>

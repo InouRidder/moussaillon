@@ -15,6 +15,9 @@
 //= require theme/jquery.lighter.js
 //= require theme/bootstrap.min.js
 
+//= require jquery-fileupload/basic
+//= require cloudinary/jquery.cloudinary
+//= require attachinary
 
 //= require cable.js
 //= require theme/modernizr.js

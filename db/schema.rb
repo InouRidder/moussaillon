@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170818161741) do
+ActiveRecord::Schema.define(version: 20170902154807) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attachinary_files", id: :serial, force: :cascade do |t|
+    t.string "attachinariable_type"
+    t.integer "attachinariable_id"
+    t.string "scope"
+    t.string "public_id"
+    t.string "version"
+    t.integer "width"
+    t.integer "height"
+    t.string "format"
+    t.string "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent"
+  end
 
   create_table "products", force: :cascade do |t|
     t.string "name"
@@ -21,9 +36,9 @@ ActiveRecord::Schema.define(version: 20170818161741) do
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "photo"
     t.bigint "scene_id"
     t.string "category"
+    t.json "pictures"
     t.index ["scene_id"], name: "index_products_on_scene_id"
   end
 
