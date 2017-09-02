@@ -49,7 +49,6 @@ gem 'faker'
 gem 'figaro'
 
 # Pictures
-gem 'carrierwave', '~> 0.11.2'
 gem 'cloudinary'
 
 # Search function
