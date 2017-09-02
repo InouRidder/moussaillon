@@ -20,6 +20,7 @@
  *= require theme/ionicons.min.css
  *= require theme/main.css
  *= require theme/responsive.css
+ *= require scenes.scss
  *= require theme/style.css
 
  */
