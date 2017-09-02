@@ -2,12 +2,16 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path @product.photo unless @product.photo.blank? %> );">
+        <div class="card">
             <div class="card-description">
-              <h2><% @product.photo %></h2>
+              <% @product.photos.each do |photo| %>
+                <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
+              <% end %>
             </div>
         </div>
       </div>
+
+
 
       <div class="col-sm-6">
         <div class="card">

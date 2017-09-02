@@ -71,7 +71,7 @@ module Admin
     end
 
     def scene_params
-      params.require(:scene).permit(:title, :description, :banner, :banner_cache)
+      params.require(:scene).permit(:title, :description, :banner)
     end
 
   end

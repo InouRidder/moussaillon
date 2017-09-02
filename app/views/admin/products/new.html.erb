@@ -1,5 +1,3 @@
-<!-- app/views/products/_form.html.erb -->
-
 <div id="page-wrapper">
 
   <div class="container-fluid">
@@ -40,8 +38,7 @@
       <br>
       <%= f.input :category, collection: ["chair", "table", "bar", "couch"], :input_html => {class: "form-control", label: "Category"  } %>
       <br>
-      <%= f.input :photo, :input_html => { class: "form-control-file" } %>
-      <%= f.input :photo_cache, as: :hidden %>
+        <%= f.input :photos, as: :attachinary %>
       <br>
       <%= f.submit class: "btn btn-primary" %>
       <% end %>
@@ -52,7 +49,6 @@
 
 </div>
 <!-- /#page-wrapper -->
-
 
 
 

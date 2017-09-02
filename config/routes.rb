@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   # PUBLIC ROUTES
 
+  mount Attachinary::Engine => "/attachinary"
+
   root to: 'pages#home'
 
   # gem high voltage to use a helper method for static pages
