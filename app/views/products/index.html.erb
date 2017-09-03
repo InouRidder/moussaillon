@@ -50,16 +50,9 @@
             <!-- Item img -->
             <%= link_to product_path(product) do %>
             <div class="item-img">
-              <img class="img-1" src=<%= product.photos unless product.photos.blank? %> alt="" style="width: 100%; height: 400px;">
+              <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> alt="" style="width: 100%; height: 400px;">
               <div class="inn">
-                <a href="https://unsplash.it/200/300" data-lighter> See more <a href="#.">
-                  <i class="icon-basket">
-                  </i>
-                </a>
-                <a href="#." >
-                  <i class="icon-heart">
-                  </i>
-                </a>
+                <a href="<%= product_path(product) %>"> See more <a href="#.">
               </a>
             </div>
           </div>

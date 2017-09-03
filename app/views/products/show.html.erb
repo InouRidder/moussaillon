@@ -15,9 +15,8 @@
             <!-- INFOMATION -->
             <div class="inner-info text center">
               <h6 class= "text-center" ><%= @product.name %></h6>
-              <p class= "text-center"><%= cl_image_tag("uqztqmqm3xymstqyqg5o",
-                width: 400, height: 300, crop: :fill) %></p>
- <p class="text-center"><%=link_to "BUY NOW", contact_path, class: "btn-buy"%></p>
+              <img class="img-1"src=<%= cl_image_path @product.photos.first.path unless @product.photos.blank?%> alt="" style="width: 100%; height: 500px"</img>
+              <p class="text-center"><%=link_to "BUY NOW", contact_path, class: "btn-buy"%></p>
               </div>
             </div>
           </div>
