@@ -4,9 +4,11 @@
       <div class="col-sm-6">
         <div class="card">
             <div class="card-description">
+             <div class="col-sm-3">
               <% @product.photos.each do |photo| %>
-                <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
+               <img width="200" height="200" style="text-center" <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
               <% end %>
+            </div>
             </div>
         </div>
       </div>
