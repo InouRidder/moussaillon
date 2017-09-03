@@ -1,18 +1,52 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-# Scene.destroy_all
-# Product.destroy_all
+puts "Emptying database"
+Scene.destroy_all
+Product.destroy_all
 
-# 5.times do
-#   Scene.create(banner: "https://unsplash.it/1000/700/?random")
-# end
 
-# 10.times do
-#   Product.create(name: "ninou", description: "A papillon", price: rand(100), scene: Scene.all.sample, photo: "https:/unsplash.it/300/300")
-# end
+puts "Creating Scenes"
 
+scenes = ["http://viphome.ir/ZImages/DirImg/Large/700779creating-beauty-ceiling-in-your-home-wood-ceiling-living-room-ideas1200-x-900-189-kb-jpeg-x.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_NKtK1dBruouu0o8pn55TN2a2ePSFISPkg53OdfBVq6B6imHU", "https://s-media-cache-ak0.pinimg.com/originals/0b/99/af/0b99af60425069aa76b5f1dde982fbd0.png", "http://cdn.homedsgn.com/wp-content/uploads/2012/10/Home-in-a-Log-Cabin-03.jpg"]
+
+scenes.each do |banner|
+  scene = Scene.new(title: Faker::RockBand.name, description: Faker::MostInterestingManInTheWorld.quote)
+  scene.banner_url = banner
+  scene.save!
+end
+
+puts "Creating products"
+
+chairs = [ "http://www.marvelbuilding.com/wp-content/uploads/2012/04/Wooden-Chair-with-Unusual-Legs-Position.jpg", "https://i.pinimg.com/236x/2f/21/af/2f21af4897f5ccf0fcd80f13c22e86bc--wood-chair-design-wood-design-furniture.jpg", "https://i.pinimg.com/736x/1d/9c/58/1d9c58b59bfc940f2626c8767dfcdc17--good-design-wooden-chairs.jpg"]
+
+couches = ["https://s-media-cache-ak0.pinimg.com/originals/26/56/ec/2656ecb69e9144ad1347b112292e7a62.jpg", "https://s-media-cache-ak0.pinimg.com/originals/b3/6d/49/b36d491435cdeb2b406d6ffb10863b80.jpg", "https://s-media-cache-ak0.pinimg.com/originals/ab/fb/63/abfb632789197dbc75cf32f130d9a4ad.jpg"]
+
+bars = ["https://i.pinimg.com/736x/a4/80/1f/a4801f82432e63c0e688f915ea57979e--cool-restaurant-design-cafe-restaurant.jpg", "https://i.pinimg.com/736x/a0/14/58/a014584baaab3d8d6e869a173e742bda--wooden-bar-wooden-crates.jpg", "https://i.pinimg.com/736x/b3/72/f8/b372f8be36186c46eab9652872a41bb7--bagel-bar-reclaimed-wood-bars.jpg"]
+
+tables = ["https://s-media-cache-ak0.pinimg.com/originals/af/29/eb/af29ebfd24ad24fdc925bd53ba27d503.jpg", "http://cdn.trendir.com/wp-content/uploads/old/archives/designer-wood-tables-linteloo-dutch-dining-1.jpg", "https://s-media-cache-ak0.pinimg.com/originals/9a/a3/8c/9aa38c6e14825fbd49120139589e607e.jpg"]
+require 'faker'
+
+
+3.times do
+  product = Product.new(name: Faker::Cat.name, category: "chair", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product.photo_urls = chairs
+  product.save!
+end
+
+3.times do
+  product = Product.new(name: Faker::Cat.name, category: "couch", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product.photo_urls = couches
+  product.save!
+end
+
+3.times do
+  product = Product.new(name: Faker::Cat.name, category: "table", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product.photo_urls = tables
+  product.save!
+end
+
+3.times do
+  product = Product.new(name: Faker::Cat.name, category: "bar", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product.photo_urls = bars
+  product.save!
+end
+
+puts "Satisfactory seeding"
