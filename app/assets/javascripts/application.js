@@ -10,8 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery_ujs
-//= require turbolinks
 //= require theme/jquery-1.11.3.min.js
 //= require theme/jquery.fatNav.min.js
 //= require theme/jquery.lighter.js
@@ -20,7 +18,6 @@
 //= require jquery-fileupload/basic
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-
 
 //= require cable.js
 //= require theme/modernizr.js
