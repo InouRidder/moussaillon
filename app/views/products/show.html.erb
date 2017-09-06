@@ -1,56 +1,119 @@
+<div class="content">
 
-<!-- Content -->
-<div id="content">
+    <!-- Popular Products -->
+    <section class="padding-top-100 padding-bottom-100">
+      <div class="container">
 
-  <!-- Popular Products -->
-  <section class="padding-top-100 padding-bottom-100">
-    <div class="container">
+        <!-- SHOP DETAIL -->
+        <div class="shop-detail">
+          <div class="row">
 
-      <!-- SHOP DETAIL -->
-      <div class="shop-detail">
-        <div class="row">
+            <!-- Popular Images Slider -->
+            <div class="col-md-7">
+              <!-- Images Slider -->
+              <div class="images-slider">
+                <ul class="slides">
+                  <% @product.photos.each do |photo| %>
+                  <li data-thumb="<%= cl_image_path photo.path %>"> <img class="img-responsive" src="<%= cl_image_path photo.path %>"  alt=""> </li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
 
-          <!-- Popular Images Slider -->
-          <div class="col-md-12">
-            <!-- INFOMATION -->
-            <div class="inner-info text center">
-              <h6 class= "text-center" ><%= @product.name %></h6>
-              <img class="img-1"src=<%= cl_image_path @product.photos.first.path unless @product.photos.blank?%> alt="" style="width: 100%; height: 500px"</img>
-              <p class="text-center"><%=link_to "BUY NOW", contact_path, class: "btn-buy"%></p>
+            <!-- COntent -->
+            <div class="col-md-5">
+              <h4><%= @product.name %></h4>
+              <span class="price"><small>€</small><%= @product.price %></span>
+
+              <!-- Sale Tags -->
+              <ul class="item-owner">
+                <li>Designer :<span> Ludo</span></li>
+                <li>Brand:<span> Moussaillon </span></li>
+                <li>Material:<span><%= @product.material %></span></li>
+              </ul>
+
+              <!-- Item Detail -->
+              <p><%= @product.description %></p>
+
+              <!-- Short By -->
+              <div class="some-info">
+                <ul class="row margin-top-30">
+                  <li class="col-xs-4">
+
+                  </li>
+
+                  <!-- ADD TO CART -->
+                  <li class="col-xs-6"> <a href="/contact" class="btn">GET IN TOUCH</a> </li>
+
+                  <!-- LIKE -->
+                  <li class="col-xs-6"> <a href="#." class="like-us"><i class="fa fa-heart"></i></a> </li>
+                </ul>
+
+                <!-- INFOMATION -->
+                <div class="inner-info">
+                  <h6>DELIVERY INFORMATION</h6>
+                  <p> Depending on the object's size and weight, we can either send or do personal delivery or the product <- NEEDS YOUR INPUT LUDO </p>
+                  <h6>SHIPPING & RETURNS</h6>
+                  <h6>SHARE THIS PRODUCT</h6>
+
+                  <!-- Social Icons -->
+                  <ul class="social_icons">
+                    <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#."><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#."><i class="fa fa-tumblr"></i></a></li>
+                    <li><a href="#."><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#."><i class="fa fa-dribbble"></i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    </section>
 
-    <!--======= PRODUCT DESCRIPTION =========-->
-    <div class="container">
-      <div class="item-decribe">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
-          <li role="presentation" class="active">
-          <a href="#descr" role="tab" data-toggle="tab">DESCRIPTION
-          </a>
-          </li>
+        <!--======= PRODUCT DESCRIPTION =========-->
+        <div class="item-decribe">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
+            <li role="presentation" class="active"><a href="#descr" role="tab" data-toggle="tab">DESCRIPTION</a></li>
+            <li role="presentation"><a href="#tags" role="tab" data-toggle="tab">INFORMATION</a></li>
+          </ul>
 
-        </ul>
+          <!-- Tab panes -->
+          <div class="tab-content animate fadeInUp" data-wow-delay="0.4s">
+            <!-- DESCRIPTION -->
+            <div role="tabpanel" class="tab-pane fade in active" id="descr">
+              <p><%= @product.description %> <br>
+              </p>
+              <h6>THE SIMPLE FACTS</h6>
+              <ul>
+                <li>
+                  <p>Praesent faucibus, leo vitae maximus dictum,</p>
+                </li>
+                <li>
+                  <p> Donec porta ut lectus </p>
+                </li>
+                <li>
+                  <p> Phasellus maximus velit id nisl</p>
+                </li>
+                <li>
+                  <p> Quisque a tellus et sapien aliquam sus</p>
+                </li>
+                <li>
+                  <p> Donec porta ut lectus </p>
+                </li>
+                <li>
+                  <p> Phasellus maximus velit id nisl</p>
+                </li>
+              </ul>
+            </div>
 
-        <!-- Tab panes -->
-        <div class="tab-content animate fadeInUp pull-left" data-wow-delay="0.4s">
-          <!-- DESCRIPTION -->
-          <p><%= @product.description %></p>
-
-          <!-- TAGS -->
-          <div role="tabpanel" class="tab-pane fade" id="tags"> </div>
+            <!-- REVIEW -->
+            <!-- TAGS -->
+            <div role="tabpanel" class="tab-pane fade" id="tags"> </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- TAGS -->
-<div role="tabpanel" class="tab-pane fade" id="tags"> </div>
-</div>
-</div>
+    </section>
 
+    <!-- Popular Products -->
+</div>

@@ -1,3 +1,4 @@
+require 'faker'
 puts "Emptying database"
 Scene.destroy_all
 Product.destroy_all
@@ -22,29 +23,29 @@ couches = ["https://s-media-cache-ak0.pinimg.com/originals/26/56/ec/2656ecb69e91
 bars = ["https://i.pinimg.com/736x/a4/80/1f/a4801f82432e63c0e688f915ea57979e--cool-restaurant-design-cafe-restaurant.jpg", "https://i.pinimg.com/736x/a0/14/58/a014584baaab3d8d6e869a173e742bda--wooden-bar-wooden-crates.jpg", "https://i.pinimg.com/736x/b3/72/f8/b372f8be36186c46eab9652872a41bb7--bagel-bar-reclaimed-wood-bars.jpg"]
 
 tables = ["https://s-media-cache-ak0.pinimg.com/originals/af/29/eb/af29ebfd24ad24fdc925bd53ba27d503.jpg", "http://cdn.trendir.com/wp-content/uploads/old/archives/designer-wood-tables-linteloo-dutch-dining-1.jpg", "https://s-media-cache-ak0.pinimg.com/originals/9a/a3/8c/9aa38c6e14825fbd49120139589e607e.jpg"]
-require 'faker'
 
+material = ["wood", "metal", "latex", "hardwood", "plastic", "bamboo", "aliminium"]
 
 3.times do
-  product = Product.new(name: Faker::Cat.name, category: "chair", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "chair", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = chairs
   product.save!
 end
 
 3.times do
-  product = Product.new(name: Faker::Cat.name, category: "couch", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "couch", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = couches
   product.save!
 end
 
 3.times do
-  product = Product.new(name: Faker::Cat.name, category: "table", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "table", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = tables
   product.save!
 end
 
 3.times do
-  product = Product.new(name: Faker::Cat.name, category: "bar", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "bar", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = bars
   product.save!
 end
