@@ -1,0 +1,44 @@
+<div class="modal fade" id="modal-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">I LOVE IT</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" id="contact_form" class="contact-form" method="post" action="https://formspree.io/ludovic@brandersnbranders.com">
+          <ul class="row">
+            <li class="col-sm-6">
+              <label>full name *
+                <input type="text" class="form-control" name="name" id="name">
+              </label>
+            </li>
+            <li class="col-sm-6">
+              <label>Email *
+                <input type="text" class="form-control" name="email" id="email" placeholder="">
+              </label>
+            </li>
+            <li class="col-sm-6">
+              <label>Phone *
+                <input type="text" class="form-control" name="company" id="company" placeholder="">
+              </label>
+            </li>
+            <li class="col-sm-6">
+              <label>SUBJECT
+                <input type="text" class="form-control" name="website" id="website" placeholder="" value="<%= @product.name %>">
+              </label>
+            </li>
+            <li class="col-sm-12">
+              <label>Message
+                <textarea class="form-control" name="message" id="message" rows="5">I am super interested <%= @product.name %>! Can I get in touch for more information?</textarea>
+              </label>
+            </li>
+            <li class="col-sm-12">
+              <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">SEND MAIL</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
