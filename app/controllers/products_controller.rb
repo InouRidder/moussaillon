@@ -13,7 +13,6 @@ class ProductsController < ApplicationController
     elsif type = params[:type]
       @products = Product.find_by_category(type)
       @products.count > 1
-      type = type.pluralize
       @info_title = type
     else
       @products = Product.all

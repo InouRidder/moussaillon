@@ -6,7 +6,7 @@ Product.destroy_all
 
 puts "Creating Scenes"
 
-scenes = ["http://viphome.ir/ZImages/DirImg/Large/700779creating-beauty-ceiling-in-your-home-wood-ceiling-living-room-ideas1200-x-900-189-kb-jpeg-x.jpg", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_NKtK1dBruouu0o8pn55TN2a2ePSFISPkg53OdfBVq6B6imHU", "https://s-media-cache-ak0.pinimg.com/originals/0b/99/af/0b99af60425069aa76b5f1dde982fbd0.png", "http://cdn.homedsgn.com/wp-content/uploads/2012/10/Home-in-a-Log-Cabin-03.jpg"]
+scenes = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_NKtK1dBruouu0o8pn55TN2a2ePSFISPkg53OdfBVq6B6imHU", "https://s-media-cache-ak0.pinimg.com/originals/0b/99/af/0b99af60425069aa76b5f1dde982fbd0.png", "http://cdn.homedsgn.com/wp-content/uploads/2012/10/Home-in-a-Log-Cabin-03.jpg"]
 
 scenes.each do |banner|
   scene = Scene.new(title: Faker::RockBand.name, description: Faker::MostInterestingManInTheWorld.quote)
@@ -26,26 +26,30 @@ tables = ["https://s-media-cache-ak0.pinimg.com/originals/af/29/eb/af29ebfd24ad2
 
 material = ["wood", "metal", "latex", "hardwood", "plastic", "bamboo", "aliminium"]
 
+puts '1'
 3.times do
-  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "chair", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "eat", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = chairs
   product.save!
 end
 
+puts '2'
 3.times do
-  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "couch", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "sleep", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = couches
   product.save!
 end
 
+puts '3'
 3.times do
-  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "table", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "living", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = tables
   product.save!
 end
 
+puts '4'
 3.times do
-  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "bar", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
+  product = Product.new(name: Faker::Cat.name, material: material.sample, category: "cook", price: rand(50..100), description: Faker::Cat.breed, scene: Scene.all.sample)
   product.photo_urls = bars
   product.save!
 end
