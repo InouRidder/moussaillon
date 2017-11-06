@@ -1,14 +1,14 @@
  <!-- Popular Products -->
- <section class="shop-page padding-top-100 padding-bottom-200">
+ <section class="shop-page padding-top-50 padding-bottom-200">
   <div class="container">
     <div class="item-display">
 
       <div class="row">
         <div class="col-xs-12">
-          <div class="pull-left">
-            <h4>
+          <div class="text-center">
+            <h2>
             <%= @info_title %>
-            </h4>
+            </h2>
           </div>
         </div>
         <div class="col-xs-6">
@@ -25,10 +25,11 @@
             <select name="categories" class="selectpicker" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
               <option value="" selected disabled hidden>Category</option>
               <option value="/collection"><%= link_to 'All', collection_path %></option>
-              <option value="/collection?type=couch"><%= link_to 'Couches', collection_path(type: "couch") %></option>
-              <option value="/collection?type=bar"><%= link_to 'Bars', collection_path(type: "bar") %></option>
-              <option value="/collection?type=table"><%= link_to 'Tables', collection_path(type: "table" ) %></option>
-              <option value="/collection?type=chair"><%= link_to 'Chairs', collection_path(type: "chair" ) %></option>
+              <option value="/collection?type=sleep"><%= link_to 'Sleep', collection_path(type: "sleep") %></option>
+              <option value="/collection?type=eat"><%= link_to 'Eat', collection_path(type: "eat") %></option>
+              <option value="/collection?type=living"><%= link_to 'Living', collection_path(type: "living" ) %></option>
+              <option value="/collection?type=cook"><%= link_to 'Cook', collection_path(type: "cook" ) %></option>
+              <option value="/collection?type=sit"><%= link_to 'Sit', collection_path(type: "sit" ) %></option>
             </select>
           </div>
         </div>
@@ -58,7 +59,7 @@
           </div>
           <% end %>
           <!-- Price -->
-          <span class="price"><small>$</small><%= product.price %></span>
+          <span class="price"><small>€</small><%= product.price %></span>
         </div>
       </div>
       <% end %>
