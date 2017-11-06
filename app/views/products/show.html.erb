@@ -1,3 +1,5 @@
+<%= render 'contact-modal', product: @product %>
+
 <div class="content">
 
     <!-- Popular Products -->
@@ -43,7 +45,7 @@
                   </li>
 
                   <!-- ADD TO CART -->
-                  <li class="col-xs-6"> <a href="/contact" class="btn">GET IN TOUCH</a> </li>
+                  <li class="col-xs-6"> <button data-toggle="modal" data-target="#modal-1" class="btn">GET IN TOUCH</button> </li>
 
                   <!-- LIKE -->
                   <li class="col-xs-6"> <a href="#." class="like-us"><i class="fa fa-heart"></i></a> </li>
