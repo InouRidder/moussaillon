@@ -36,7 +36,7 @@ body
   padding: 0px;
 }
 body {
-  background: #FFF;
+  background: #E8E6EE;
   font-weight: normal;
   position: relative;
   font-size: 14px;
@@ -259,15 +259,15 @@ a:hover, a:focus {
   z-index: 1;
 }
 .btn:hover {
-  background: #fff;
-  color: #ab4e52;
+  background: #263543;
+  color: #0B1D2B;
 }
 .btn-white {
   background: #fff;
   color: #ab4e52 !important;
 }
 .btn-white:hover {
-  background: #ab4e52;
+  background: #263543;
   color: #fff !important;
 }
 .tp-caption .btn {
@@ -296,7 +296,7 @@ a:hover, a:focus {
 }
 .btn-1:hover {
   color: #fff;
-  background: #965452;
+  background: #263543;
 }
 .btn-small {
   padding: 0 20px;
@@ -311,7 +311,7 @@ a:hover, a:focus {
   color: #2d3a4b;
 }
 .btn-round:hover {
-  background: #2d3a4b;
+  background: #263543;
   color: #fff;
 }
 .parallax-bg {
@@ -414,7 +414,7 @@ header {
   width: 100%;
   z-index: 999;
   background: #fff;
-  padding: 30px 0;
+  padding: 20px 0;
   position: relative;
 }
 header .container {
@@ -1786,7 +1786,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
   line-height: 36px;
 }
 .shop-detail .item-owner li span {
-  color: #ffe115;
+  color: #263543;
 }
 .shop-detail .quinty .btn {
   border: 1px solid #2d3a4b;
@@ -1813,12 +1813,13 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
   padding: 0px;
 }
 .shop-detail .some-info .btn:hover {
-  background: #ffe115;
+  background: #E8E6EE;
+  color: #263543;
 }
 .shop-detail .some-info .like-us {
   font-size: 16px;
   margin-top: 10px;
-  color: #ffe115;
+  color: #263543;
   line-height: 30px;
 }
 .shop-detail h6 {
@@ -3457,7 +3458,7 @@ footer h6 {
 footer {
   padding: 120px 0;
   padding-bottom: 60px;
-  background: #171e27;
+  background: #0B1D2B;
   position: relative;
   z-index: 1;
 }
@@ -3836,7 +3837,7 @@ footer .subscribe input {
   font-weight: normal;
 }
 .contact-info {
-  border: 2px solid #ffe115;
+  border: 2px solid #0B1D2B;
   padding: 40px;
   margin-top: 0px;
 }
@@ -4284,8 +4285,8 @@ main {
   border: none;
 }
 .top-bar .user-basket .btn:hover {
-  background: #ffe115;
-  color: #2d3a4b;
+  background: #0B1D2B;
+  color: #E8E6EE;
 }
 .top-bar .user-basket .media-heading {
   margin-top: 0px;
