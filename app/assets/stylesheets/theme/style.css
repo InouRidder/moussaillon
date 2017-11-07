@@ -4419,14 +4419,6 @@ main {
   font-size: 13px;
 }
 
-
-
-/*
-==========================
-SELECT MENU PRODUCT INDEX
-==========================
-*/
-
 .side-bar-nav {
   display: flex;
   flex-direction: column;
@@ -4447,14 +4439,6 @@ SELECT MENU PRODUCT INDEX
 .nav-active {
   border-bottom: 1px solid #0B1D2B;
 }
-
-
-
-/*
-=====================================
-IMAGES
-=====================================
-*/
 
 .img-responsive {
   width: 100%;
