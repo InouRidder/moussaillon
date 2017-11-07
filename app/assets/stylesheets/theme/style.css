@@ -1905,7 +1905,8 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .item-decribe .nav-tabs>li>a:hover {
   background: none;
-  border-bottom: 2px solid #ffe115;
+  border-bottom: 2px solid #879FA6;
+  color: #879FA6;
 }
 .item-decribe .nav-tabs li {
   float: left;
@@ -1914,7 +1915,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .item-decribe .nav-tabs>li.active>a {
   border: none;
-  border-bottom: 2px solid #ffe115;
+  border-bottom: 2px solid #263543;
 }
 .item-decribe .nav-tabs>li {
   margin: 0px;
@@ -4405,4 +4406,16 @@ main {
 .cart-ship-info.register .bootstrap-select.btn-group .dropdown-menu li a span.text {
   display: inline-block;
   font-size: 13px;
+}
+
+/*
+=====================================
+IMAGES
+=====================================
+*/
+
+.img-responsive {
+  width: 100%;
+  display: block;
+  max-width: 100%;
 }
