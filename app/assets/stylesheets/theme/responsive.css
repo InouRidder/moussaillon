@@ -350,7 +350,7 @@ header .ownmenu ul.dropdown li a {
   width: 50%;
   margin-bottom: 30px;
 }
-header {
+/*header {
   padding: 0px;
 }
 header .logo {
@@ -385,7 +385,7 @@ header .logo:before {
 }
 header .logo:after {
   right: 0px;
-}
+}*/
 .latest-work .filter {
   top: 0px;
   position: relative;
@@ -918,7 +918,7 @@ header .navbar li a:before {
   bottom: 0px;
 }
 header .navbar-collapse {
-  width: 100%;
+  width: 103%;
   margin: 0px;
 }
 header .container {
@@ -1061,9 +1061,13 @@ footer h6 {
   width: 100%;
 }
 }
-@media(max-width:540px) {
+@media(max-width:767px) {
 header .logo {
   width: 100%;
+}
+
+header .navbar li a {
+  background-color: white;
 }
 .top-shop-feature article{
   margin:0 20px;
@@ -1086,6 +1090,7 @@ header .logo {
   float: left;
 }
 header .navbar .nav {
+  margin-top: 30px;
 }
 .nav-right .dropdown-menu {
   right: auto;
