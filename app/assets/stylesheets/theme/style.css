@@ -429,6 +429,7 @@ header .navbar {
   text-align: center;
   float: right;
 }
+
 header .logo {
   float: left;
   margin-top: 8px;
@@ -437,7 +438,7 @@ header .logo {
 header .logo img {
   z-index
   position: relative;
-  width: 30%;
+  height: 120px;
   top: 0;
   left:0;
 }
@@ -455,6 +456,9 @@ header .is-sticky .sticky {
 }
 header .navbar {
   display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 37%;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -ms-transition: 0.4s ease-in-out;
@@ -478,9 +482,11 @@ header .sticky {
 header .navbar li a {
   font-size: 14px;
   color: #466878;
+  /*background-color: white;*/
+  padding:;
   font-weight: normal;
-  padding: 15px 0px;
-  margin:0 10px;
+  padding: 15px 10px;
+  /*margin:0 10px;*/
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -505,7 +511,7 @@ header .navbar li a:hover:before {
 }
 header .navbar li.active a:before {
   width: 100%;
-  margin: 0px auto;
+  /*margin: 0px auto;*/
   position: absolute;
   content: "";
   height: 6px;
@@ -520,11 +526,12 @@ header .navbar li.active a:before {
   transition: 0.2s ease-in-out;
 }
 .nav>li>a:focus, .nav>li>a:hover {
-  background: none;
+  /*background: none;*/
 }
 .ownmenu .nav .dropdown-menu {
   background: rgba(255,255,255,0.99);
   padding: 0px;
+  width: 100%;
 }
 .ownmenu .dropdown-menu li {
   margin: 0px;
