@@ -1683,6 +1683,8 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
   padding: 80px 0;
   padding-bottom: 50px;
   box-shadow: 1px 1px 1px lightgrey;
+  transition: 0.4s ease-in-out;
+
 }
 .shop-items .item .item-name {
   padding: 0 50px;
@@ -1695,31 +1697,30 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .shop-items .inn {
   display: inline-block;
-  border-radius: 30px;
-  background: #2d3a4b;
   text-align: center;
-  color: #fff;
-  height: 45px;
-  max-width: 150px;
+  opacity: 0;
+  color: black;
   position: absolute;
-  bottom: -100px;
-  left: 0px;
-  right: 0px;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: 10px auto;
   padding: 0 20px;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -ms-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
+.shop-items .item:hover {
+  opacity: 0.7;
+}
+
 .shop-items .item:hover .inn {
-  bottom: 0px;
+  opacity: 1;
 }
 .shop-items .inn a {
   display: inline-block;
-  font-size: 16px;
-  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  color: #263543;
   margin: 0 8px;
   line-height: 50px;
 }
