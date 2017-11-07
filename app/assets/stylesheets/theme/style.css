@@ -1848,6 +1848,10 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
   margin: 0 5px;
   color: #2d3a4b;
 }
+
+.social_icons li {
+  margin: 10px;
+}
 .images-slider {
   position: relative;
   background: #f7f7f7;
