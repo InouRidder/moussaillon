@@ -1152,7 +1152,13 @@ header .user-basket .dropdown-menu{
   min-width:300px;
 }
 }
-@media(max-width:320px) {
+@media(max-width:850px) {
+    .dropdown-select {
+    display: visible;
+  }
 }
 @media(max-height: 700px) {
 }
+
+
+

@@ -75,6 +75,7 @@ h1 {
 }
 h2 {
   font-size: 36px;
+  font-weight: lighter;
 }
 h3 {
   font-size: 30px;
@@ -176,8 +177,13 @@ p.intro-small {
 .font-bold {
   font-weight: bold !important;
 }
+
+a {
+  transition: all .2s ease-in-out;
+}
 a:hover, a:focus {
-  color: #ffe115;
+  color: #879FA6;
+  transform: scale(1.1);
 }
 .primary-color {
   color: #ffe115 !important;
@@ -1683,6 +1689,8 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
   padding: 80px 0;
   padding-bottom: 50px;
   box-shadow: 1px 1px 1px lightgrey;
+  transition: 0.4s ease-in-out;
+
 }
 .shop-items .item .item-name {
   padding: 0 50px;
@@ -1695,31 +1703,30 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .shop-items .inn {
   display: inline-block;
-  border-radius: 30px;
-  background: #2d3a4b;
   text-align: center;
-  color: #fff;
-  height: 45px;
-  max-width: 150px;
+  opacity: 0;
+  color: black;
   position: absolute;
-  bottom: -100px;
-  left: 0px;
-  right: 0px;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: 10px auto;
   padding: 0 20px;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -ms-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
+.shop-items .item:hover {
+  opacity: 0.7;
+}
+
 .shop-items .item:hover .inn {
-  bottom: 0px;
+  opacity: 1;
 }
 .shop-items .inn a {
   display: inline-block;
-  font-size: 16px;
-  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  color: #263543;
   margin: 0 8px;
   line-height: 50px;
 }
@@ -3476,7 +3483,7 @@ footer {
   padding-bottom: 60px;
   background: #0B1D2B;
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 .about-footer i {
   width: 20px;
@@ -4412,6 +4419,37 @@ main {
   font-size: 13px;
 }
 
+
+
+/*
+==========================
+SELECT MENU PRODUCT INDEX
+==========================
+*/
+
+.side-bar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  position: fixed;
+  z-index: 99;
+  top: 40%;
+  right: 3%;
+  padding: 5px;
+}
+.side-bar-nav a {
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  min-width: 80px;
+  background-color: white;
+}
+
+.nav-active {
+  border-bottom: 1px solid #0B1D2B;
+}
+
+
+
 /*
 =====================================
 IMAGES
@@ -4423,3 +4461,4 @@ IMAGES
   display: block;
   max-width: 100%;
 }
+

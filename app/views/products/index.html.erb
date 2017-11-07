@@ -1,11 +1,23 @@
+<% content_for(:after_js) do %>
+  <script>
+    $("#<%= @query %>").addClass('nav-active');
+  </script>
+<% end %>
+<div class="side-bar-nav">
+  <%= link_to 'All', collection_path, id: 'all' %>
+  <%= link_to 'Sleep', collection_path(type: "sleep"), id: 'sleep' %>
+  <%= link_to 'Eat', collection_path(type: "eat"), id: 'eat' %>
+  <%= link_to 'Living', collection_path(type: "living" ), id: 'living' %>
+  <%= link_to 'Cook', collection_path(type: "cook" ), id: 'cook' %>
+  <%= link_to 'Sit', collection_path(type: "sit" ), id: 'sit' %>
+</div>
  <!-- Popular Products -->
- <section class="shop-page padding-top-50 padding-bottom-200">
+ <section class="shop-page padding-top-50 padding-bottom-200" style="padding-right: 80px">
   <div class="container">
     <div class="item-display">
-
       <div class="row">
         <div class="col-xs-12">
-          <div class="text-center">
+          <div class="text-center" style="margin-left: 40px;">
             <h2>
             <%= @info_title %>
             </h2>
@@ -18,21 +30,7 @@
         </div>
 
         <!-- Products Select -->
-        <div class="col-xs-6">
-          <div class="pull-right">
-
-            <!-- Short By -->
-            <select name="categories" class="selectpicker" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-              <option value="" selected disabled hidden>Category</option>
-              <option value="/collection"><%= link_to 'All', collection_path %></option>
-              <option value="/collection?type=sleep"><%= link_to 'Sleep', collection_path(type: "sleep") %></option>
-              <option value="/collection?type=eat"><%= link_to 'Eat', collection_path(type: "eat") %></option>
-              <option value="/collection?type=living"><%= link_to 'Living', collection_path(type: "living" ) %></option>
-              <option value="/collection?type=cook"><%= link_to 'Cook', collection_path(type: "cook" ) %></option>
-              <option value="/collection?type=sit"><%= link_to 'Sit', collection_path(type: "sit" ) %></option>
-            </select>
-          </div>
-        </div>
+       <!--  -->
       </div>
 
       <!-- Popular Item Slide -->
@@ -53,7 +51,7 @@
             <div class="item-img">
               <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> alt="" style="width: 100%; height: 400px;">
               <div class="inn">
-                <a href="<%= product_path(product) %>"> See more <a href="#.">
+                <a href="<%= product_path(product) %>"> Show <a href="#.">
               </a>
             </div>
           </div>
