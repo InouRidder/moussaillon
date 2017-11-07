@@ -75,6 +75,7 @@ h1 {
 }
 h2 {
   font-size: 36px;
+  font-weight: lighter;
 }
 h3 {
   font-size: 30px;
@@ -176,8 +177,13 @@ p.intro-small {
 .font-bold {
   font-weight: bold !important;
 }
+
+a {
+  transition: all .2s ease-in-out;
+}
 a:hover, a:focus {
-  color: #ffe115;
+  color: #879FA6;
+  transform: scale(1.1);
 }
 .primary-color {
   color: #ffe115 !important;
@@ -3476,7 +3482,7 @@ footer {
   padding-bottom: 60px;
   background: #0B1D2B;
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 .about-footer i {
   width: 20px;
@@ -4411,3 +4417,33 @@ main {
   display: inline-block;
   font-size: 13px;
 }
+
+
+/*
+==========================
+SELECT MENU PRODUCT INDEX
+==========================
+*/
+
+.side-bar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  position: fixed;
+  z-index: 99;
+  top: 40%;
+  right: 3%;
+  padding: 5px;
+}
+.side-bar-nav a {
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  min-width: 80px;
+  background-color: white;
+}
+
+.nav-active {
+  border-bottom: 1px solid #0B1D2B;
+}
+
+

@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
 # was thinking instead of making a shop / index / result page, just do an index one and set the products based on the params. What do you think?
 
   def index
+    @query = params[:type] || 'all'
     if query = params[:search]
       @products = Product.search_name_and_description(query)
       @info_title = "Results for #{query}"

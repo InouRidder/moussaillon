@@ -1,42 +1,23 @@
-        <style>
-        @media (min-width: 850) {
-            .side-bar-nav {
-              display: flex;
-              flex-direction: column;
-              position: fixed;
-              z-index: 99;
-              top: 40%;
-              right: 0px;
-            }
-            .side-bar-nav a {
-              padding: 5px 10px;
-              min-width: 80px;
-              background-color: white;
-            }
-          }
-          @media (max-width: 850) {
-            .side-bar-nav {
-              display: none;
-            }
-          }
-        </style>
-
-        <div class="side-bar-nav">
-          <%= link_to 'All', collection_path %>
-          <%= link_to 'Sleep', collection_path(type: "sleep") %>
-          <%= link_to 'Eat', collection_path(type: "eat") %>
-          <%= link_to 'Living', collection_path(type: "living" ) %>
-          <%= link_to 'Cook', collection_path(type: "cook" ) %>
-          <%= link_to 'Sit', collection_path(type: "sit" ) %>
-        </div>
+<% content_for(:after_js) do %>
+  <script>
+    $("#<%= @query %>").addClass('nav-active');
+  </script>
+<% end %>
+<div class="side-bar-nav">
+  <%= link_to 'All', collection_path, id: 'all' %>
+  <%= link_to 'Sleep', collection_path(type: "sleep"), id: 'sleep' %>
+  <%= link_to 'Eat', collection_path(type: "eat"), id: 'eat' %>
+  <%= link_to 'Living', collection_path(type: "living" ), id: 'living' %>
+  <%= link_to 'Cook', collection_path(type: "cook" ), id: 'cook' %>
+  <%= link_to 'Sit', collection_path(type: "sit" ), id: 'sit' %>
+</div>
  <!-- Popular Products -->
- <section class="shop-page padding-top-50 padding-bottom-200" style="padding-right: 5%">
+ <section class="shop-page padding-top-50 padding-bottom-200" style="padding-right: 80px">
   <div class="container">
     <div class="item-display">
-
       <div class="row">
         <div class="col-xs-12">
-          <div class="text-center">
+          <div class="text-center" style="margin-left: 40px;">
             <h2>
             <%= @info_title %>
             </h2>
@@ -49,9 +30,7 @@
         </div>
 
         <!-- Products Select -->
-
-
-
+       <!--  -->
       </div>
 
       <!-- Popular Item Slide -->
