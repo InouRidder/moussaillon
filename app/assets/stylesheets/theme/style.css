@@ -1916,7 +1916,8 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .item-decribe .nav-tabs>li>a:hover {
   background: none;
-  border-bottom: 2px solid #ffe115;
+  border-bottom: 2px solid #879FA6;
+  color: #879FA6;
 }
 .item-decribe .nav-tabs li {
   float: left;
@@ -1925,7 +1926,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .item-decribe .nav-tabs>li.active>a {
   border: none;
-  border-bottom: 2px solid #ffe115;
+  border-bottom: 2px solid #263543;
 }
 .item-decribe .nav-tabs>li {
   margin: 0px;
@@ -4419,6 +4420,7 @@ main {
 }
 
 
+
 /*
 ==========================
 SELECT MENU PRODUCT INDEX
@@ -4446,4 +4448,17 @@ SELECT MENU PRODUCT INDEX
   border-bottom: 1px solid #0B1D2B;
 }
 
+
+
+/*
+=====================================
+IMAGES
+=====================================
+*/
+
+.img-responsive {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
 
