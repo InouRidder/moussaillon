@@ -11,6 +11,9 @@
  * It is generally better to create a new file per style scope.
  * STILL WORKING COMMIT
 
+ *= require rs-plugin/settings.css
+ *= require rs-plugin/settings-ie8.css
+
  */
 
 
