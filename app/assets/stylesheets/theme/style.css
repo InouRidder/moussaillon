@@ -420,7 +420,6 @@ header {
   width: 100%;
   z-index: 999;
   background: #fff;
-  /*padding: 20px 0;*/
   position: relative;
 }
 header .container {
@@ -442,7 +441,6 @@ header .logo {
   position: relative;
 }
 header .logo img {
-  z-index
   position: relative;
   height: 120px;
   top: 0;
@@ -488,11 +486,8 @@ header .sticky {
 header .navbar li a {
   font-size: 14px;
   color: #466878;
-  /*background-color: white;*/
-  padding:;
   font-weight: normal;
   padding: 15px 10px;
-  /*margin:0 10px;*/
   letter-spacing: 3px;
   text-transform: uppercase;
 }
