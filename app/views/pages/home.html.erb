@@ -23,27 +23,14 @@
               data-elementdelay="0.1"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "The Latest Scene by Ludo" %></div>
-              <!-- LAYER NR. 2 -->
-              <div class="tp-caption sfl font-extra-bold tp-resizeme"
-              data-x="left" data-hoffset="0"
-              data-y="center" data-voffset="-120"
-              data-speed="800"
-              data-start="800"
-              data-easing="Power3.easeInOut"
-              data-splitin="none"
-              data-splitout="none"
-              data-elementdelay="0.07"
-              data-endelementdelay="0.1"
-              data-endspeed="300"
-              style="z-index: 6; font-size:80px; color:#2d3a4b; text-transform:uppercase; white-space: nowrap;"></div>
+              style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "by Ludo" %></div>
             </div>
               <!-- LAYER NR. 2 -->
 
             <div class="move-up" style="position: absolute; top: 0;">
               <div class="tp-caption sfr font-extra-bold tp-resizeme"
               data-x="left" data-hoffset="0"
-              data-y="center" data-voffset="0"
+              data-y="center" data-voffset="-100"
               data-speed="800"
               data-start="800"
               data-easing="Power3.easeInOut"
@@ -52,11 +39,11 @@
               data-elementdelay="0.07"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "Featured" %> </div>
+              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "Featured Scene" %> </div>
               <!-- LAYER NR. 2 -->
               <div class="tp-caption sfr font-extra-bold tp-resizeme"
-              data-x="left" data-hoffset="0"
-              data-y="center" data-voffset="110"
+              data-x="left" data-hoffset="100"
+              data-y="center" data-voffset="0"
               data-speed="800"
               data-start="1300"
               data-easing="Power3.easeInOut"
@@ -65,12 +52,12 @@
               data-elementdelay="0.07"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "Scene" %> </div>
+              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "" %> </div>
             </div>
             <!-- LAYER NR. 4 -->
             <div class="tp-caption lfb tp-resizeme"
             data-x="left" data-hoffset="0"
-            data-y="center" data-voffset="240"
+            data-y="center" data-voffset="0"
             data-speed="800"
             data-start="2200"
             data-easing="Power3.easeInOut"
@@ -78,7 +65,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= link_to "Latest Scene", scene_path(Scene.last), class: "btn" if Scene.last %> </div>
+            style="z-index: 8;"><%= link_to "Latest Scene", scene_path(Scene.last), class: "btn-opague" if Scene.last %> </div>
           </li>
 
           <!-- SLIDE  -->
@@ -89,7 +76,7 @@
             <!-- LAYER NR. 1 -->
             <div class="tp-caption font-playfair sfb tp-resizeme"
             data-x="center" data-hoffset="0"
-            data-y="center" data-voffset="-150"
+            data-y="center" data-voffset="-250"
             data-speed="800"
             data-start="500"
             data-easing="Power3.easeInOut"
@@ -98,11 +85,11 @@
             data-elementdelay="0.1"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "The Latest Product from ecoshop" %></div>
+            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "The Latest Products from ecoshop" %></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-regular tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
-            data-y="center" data-voffset="-50"
+            data-y="center" data-voffset="-170"
             data-speed="800"
             data-start="800"
             data-easing="Power3.easeInOut"
@@ -115,7 +102,7 @@
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
-            data-y="center" data-voffset="60"
+            data-y="center" data-voffset="-80"
             data-speed="800"
             data-start="1300"
             data-easing="Power3.easeInOut"
@@ -140,8 +127,8 @@
             style="z-index: 6; font-size:60px; color:#fff; text-transform:uppercase; white-space: nowrap;"></div>
             <!-- LAYER NR. 4 -->
             <div class="tp-caption lfb tp-scrollbelowslider tp-resizeme"
-            data-x="center" data-hoffset="-120"
-            data-y="center" data-voffset="200"
+            data-x="center" data-hoffset="0"
+            data-y="center" data-voffset="0"
             data-speed="800"
             data-start="2200"
             data-easing="Power3.easeInOut"
@@ -149,7 +136,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= link_to "Lastest Product", product_path(Product.last), class: "btn" if Product.last%> </div>
+            style="z-index: 8;"><%= link_to "Lastest Product", product_path(Product.last), class: "btn-opague" if Product.last %> </div>
           </li>
         </ul>
       </div>
@@ -163,56 +150,38 @@
       <!-- Main Heading -->
       <div class="heading text-center">
         <h4>Moussaillon</h4>
-        <span>Something about my amazing wood carving techniques</span> </div>
+        <span>Something about my amazing wood carving techniques</span>
+      </div>
         <div class="knowledge-share">
           <ul class="row">
+            <div class="shop-items row">
 
-            <!-- Post 1 -->
-            <li class="col-md-6">
-              <div class="date">
-               <span>
-                 Ludo
-               </span>
-               <span class="huge">
+        <% @latest_products.each do |product| %>
 
-               </span>
-             </div>
-             <a href="#.">
-              Wood Table
-            </a>
-            <p>
-              What about your latest work here
-            </p>
-            <span>
-              By
-              <strong>
-                Ludo
-              </strong>
-            </span>
-          </li>
+        <!-- Item -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="item">
+            <!-- Item Name -->
+            <div class="item-name"> <a href="#."><%= product.name %></a>
+              <p><%= product.description %></p>
+              <p> Added on <%= product.created_at.strftime("%A, %b %d") %></p>
+            </div>
+            <!-- Item img -->
+            <%= link_to product_path(product) do %>
+            <div class="item-img">
+              <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> alt="" style="width: 100%; height: 400px;">
+              <div class="inn">
+                <a href="<%= product_path(product) %>"> Show <a href="#.">
+              </a>
+            </div>
+          </div>
+          <% end %>
+          <!-- Price -->
+          <span class="price"><small>€</small><%= product.price %></span>
+        </div>
+      </div>
+      <% end %>
 
-          <!-- Post 2 -->
-          <li class="col-md-6">
-            <div class="date">
-             <span>
-               Ludo
-             </span>
-             <span class="huge">
-             </span>
-           </div>
-           <a href="#.">
-            Wood Table
-          </a>
-          <p>
-            What about your latest work here
-          </p>
-          <span>
-            By
-            <strong>
-              Ludo
-            </strong>
-          </span>
-        </li>
 
       </ul>
     </div>

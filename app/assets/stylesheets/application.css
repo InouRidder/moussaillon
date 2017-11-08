@@ -9,8 +9,10 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
- *
- *= require_self
+ * STILL WORKING COMMIT
+
+ *= require rs-plugin/settings.css
+ *= require rs-plugin/settings-ie8.css
 
  *= require rs-plugin/settings.css
  *= require rs-plugin/settings-ie8.css
@@ -18,9 +20,9 @@
  *= require theme/animate.css
  *= require theme/bootstrap.min.css
  *= require theme/ionicons.min.css
- *= require theme/main.css
  *= require theme/responsive.css
  *= require scenes.scss
+ *= require theme/main.css
  *= require theme/style.css
 
  */

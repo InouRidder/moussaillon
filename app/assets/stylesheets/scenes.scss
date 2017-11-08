@@ -45,3 +45,13 @@
   text-decoration: none;
   color:#2C3A4C;
 }
+
+.btn-opague {
+  background-color: rbga(255,255,255,1);
+  color: white !important;
+  padding: 30px;
+  border-radius: 4px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
