@@ -3388,7 +3388,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
       SUB BANNER
 ========================================================*/
 .sub-bnr {
-  background: url('https://unsplash.it/1000/600') no-repeat;
+  background: url('contact-background.jpg') no-repeat;
   background-size: cover !important;
   min-height: 610px;
   text-align: center;
