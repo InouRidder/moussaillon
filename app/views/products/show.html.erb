@@ -25,13 +25,12 @@
             <!-- COntent -->
             <div class="col-md-5">
               <h4><%= @product.name %></h4>
-              <span class="price"><small>€</small><%= @product.price %></span>
 
               <!-- Sale Tags -->
               <ul class="item-owner">
                 <li>Designer :<span> Ludo</span></li>
-                <li>Brand:<span> Moussaillon </span></li>
                 <li>Material:<span> <%= @product.material.capitalize %></span></li>
+                <li>Price:<span> <%= @product.price %> </span></li>
               </ul>
 
               <!-- Item Detail -->
@@ -46,12 +45,12 @@
                 <!-- INFOMATION -->
                 <div class="inner-info">
                   <h6>DELIVERY INFORMATION</h6>
-                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloribus itaque dolore magni praesentium neque, dicta harum nostrum incidunt, ex ipsum eveniet obcaecati, dolorum id laudantium nobis debitis quia! Vero aperiam dignissimos velit et alias assumenda tempora minima eveniet quo dolor corporis distinctio sequi, quos placeat dolore. Aut, officia, voluptate.</p>
+                  <p> We deliver worldwide. Leave your address in your request and we will answer with delivery details. </p>
               <!--     <h6>SHIPPING & RETURNS</h6> -->
                   <h6>SHARE THIS PRODUCT</h6>
                   <!-- Social Icons -->
                   <ul class="social_icons">
-                    <li> <a href="#." class="like-us" data-toggle="modal" data-target="#modal-1"><i class="fa fa-heart"></i></a> </li>
+                    <li> <a href="#." class="like-us" data-toggle="modal" data-target="#modal-1"><i class="fa fa-pinterest"></i></a> </li>
                     <li><a href="https://www.facebook.com/moussaillonfurniture"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="https://www.instagram.com/moussaillonmaker/"><i class="fa fa-instagram"></i></a></li>
                   </ul>
@@ -66,36 +65,14 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs animate fadeInUp" data-wow-delay="0.4s" role="tablist">
             <li role="presentation" class="active"><a href="#descr" role="tab" data-toggle="tab">DESCRIPTION</a></li>
-            <li role="presentation"><a href="#tags" role="tab" data-toggle="tab">INFORMATION</a></li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content animate fadeInUp" data-wow-delay="0.4s">
             <!-- DESCRIPTION -->
             <div role="tabpanel" class="tab-pane fade in active" id="descr">
-              <p><%= @product.description %> <br>
-              </p>
-              <h6>THE SIMPLE FACTS</h6>
-              <ul>
-                <li>
-                  <p>Praesent faucibus, leo vitae maximus dictum,</p>
-                </li>
-                <li>
-                  <p> Donec porta ut lectus </p>
-                </li>
-                <li>
-                  <p> Phasellus maximus velit id nisl</p>
-                </li>
-                <li>
-                  <p> Quisque a tellus et sapien aliquam sus</p>
-                </li>
-                <li>
-                  <p> Donec porta ut lectus </p>
-                </li>
-                <li>
-                  <p> Phasellus maximus velit id nisl</p>
-                </li>
-              </ul>
+              <h3><%= @product.description %> </h3>
+
             </div>
 
             <!-- REVIEW -->

@@ -23,7 +23,7 @@
               data-elementdelay="0.1"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "by Ludo" %></div>
+              style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= @words.sample %></div>
             </div>
               <!-- LAYER NR. 2 -->
 
@@ -39,7 +39,7 @@
               data-elementdelay="0.07"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "Featured Scene" %> </div>
+              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= @words.sample %> </div>
               <!-- LAYER NR. 2 -->
               <div class="tp-caption sfr font-extra-bold tp-resizeme"
               data-x="left" data-hoffset="100"
@@ -65,7 +65,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= link_to "Latest Scene", scene_path(Scene.last), class: "btn-opague" if Scene.last %> </div>
+            style="z-index: 8;"><%= @words.sample %> </div>
           </li>
 
           <!-- SLIDE  -->
@@ -85,7 +85,7 @@
             data-elementdelay="0.1"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= "The Latest Products from ecoshop" %></div>
+            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= @words.sample %></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-regular tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
@@ -98,7 +98,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "have beautiful"  %></div>
+            style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= @words.sample  %></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
@@ -136,7 +136,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= link_to "Lastest Product", product_path(Product.last), class: "btn-opague" if Product.last %> </div>
+            style="z-index: 8;"> <%=  @words.sample  %> </div>
           </li>
         </ul>
       </div>

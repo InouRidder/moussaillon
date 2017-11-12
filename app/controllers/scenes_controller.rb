@@ -5,6 +5,8 @@ class ScenesController < ApplicationController
 
     # SCENE SHOW PAGE SLIDING
 
+    # TODO cl image path stuff
+
     array_all_id = Scene.all.pluck(:id)
     current_id = @scene.id
     index_current_id = array_all_id.index(current_id)

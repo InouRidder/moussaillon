@@ -7,7 +7,7 @@
   <%= link_to 'All', collection_path, id: 'all' %>
   <%= link_to 'Sleep', collection_path(type: "sleep"), id: 'sleep' %>
   <%= link_to 'Eat', collection_path(type: "eat"), id: 'eat' %>
-  <%= link_to 'Living', collection_path(type: "living" ), id: 'living' %>
+  <%= link_to 'Live', collection_path(type: "live" ), id: 'live' %>
   <%= link_to 'Cook', collection_path(type: "cook" ), id: 'cook' %>
   <%= link_to 'Sit', collection_path(type: "sit" ), id: 'sit' %>
 </div>
@@ -57,7 +57,6 @@
           </div>
           <% end %>
           <!-- Price -->
-          <span class="price"><small>€</small><%= product.price %></span>
         </div>
       </div>
       <% end %>
