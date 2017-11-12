@@ -1,3 +1,7 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Cormorant Garamond', serif;*/
+
 /*------------------------------------------------------------------
     Main Style Stylesheet
     Project:        HTML5 Template
@@ -65,7 +69,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   color: #263543;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -95,8 +99,8 @@ h6 {
 p {
   font-weight: 400;
   color: #6f6f6f;
-  line-height: 26px;
   text-rendering: optimizeLegibility;
+  font-family: 'Cormorant Garamond', serif;
 }
 button {
   -webkit-transition: all 0.4s ease-in-out;
@@ -3374,7 +3378,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
   color: #2d3a4b;
 }
 .small-about .social_icons li a:hover {
-  color: #ffe333;
+  color: silver;
 }
 .small-about p {
   font-family: 'Playfair Display', serif;
@@ -3388,6 +3392,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
       SUB BANNER
 ========================================================*/
 .sub-bnr {
+  background: url('contact-background.jpg') no-repeat;
   background-size: cover !important;
   min-height: 610px;
   text-align: center;
@@ -3784,7 +3789,8 @@ footer .subscribe input {
   margin-top: 15px;
 }
 #contact_form li .btn:hover {
-  background: #ffe115;
+  background: #E8E6EE;
+  color: #0B1D2B;
 }
 .contact-form .tittle {
   text-align: center;
