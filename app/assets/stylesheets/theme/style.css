@@ -187,7 +187,6 @@ a {
 }
 a:hover, a:focus {
   color: #879FA6;
-  transform: scale(1.1);
 }
 .primary-color {
   color: #ffe115 !important;
@@ -3392,7 +3391,6 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
       SUB BANNER
 ========================================================*/
 .sub-bnr {
-  background: url('contact-background.jpg') no-repeat;
   background-size: cover !important;
   min-height: 610px;
   text-align: center;

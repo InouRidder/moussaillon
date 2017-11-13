@@ -1157,8 +1157,24 @@ header .user-basket .dropdown-menu{
     display: visible;
   }
 }
-@media(max-height: 700px) {
+
+
+@media(min-width:767px) and (max-width:991px) {
+  .nav {
+    width: 400px;
+    margin-top: -28px;
+  }
 }
 
+@media(max-width:400px) {
+    .nav {
+      position: absolute;
+    }
+    .navbar-toggle {
+      position: relative;
+      bottom: -50px;
+      z-index: 99;
+  }
+}
 
 
