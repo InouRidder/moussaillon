@@ -187,7 +187,6 @@ a {
 }
 a:hover, a:focus {
   color: #879FA6;
-  transform: scale(1.1);
 }
 .primary-color {
   color: #ffe115 !important;
