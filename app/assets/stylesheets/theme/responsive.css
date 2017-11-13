@@ -1167,9 +1167,13 @@ header .user-basket .dropdown-menu{
 }
 
 @media(max-width:400px) {
+    .nav {
+      position: absolute;
+    }
     .navbar-toggle {
-    display: block;
-    margin-top:60px !important;
+      position: relative;
+      bottom: -50px;
+      z-index: 99;
   }
 }
 
