@@ -1,5 +1,5 @@
   <!--======= HOME MAIN SLIDER =========-->
-  <section class="home-slider" style="height: 85vh;">
+  <section class="home-slider"  style="height: 85vh;">
 
     <!-- SLIDE Start -->
     <div class="tp-banner-container">
@@ -8,7 +8,7 @@
           <!-- SLIDE  -->
           <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
             <!-- MAIN IMAGE -->
-            <img src="http://unsplash.it/1000/700"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+            <img src="<%= cl_image_path @recent_scenes.sample.banner.path %>"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
             <!-- LAYERS -->
             <!-- LAYER NR. 1 -->
             <div class="move-up">
@@ -23,7 +23,7 @@
               data-elementdelay="0.1"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= @words.sample %></div>
+              style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"></div>
             </div>
               <!-- LAYER NR. 2 -->
 
@@ -31,15 +31,15 @@
               <div class="tp-caption sfr font-extra-bold tp-resizeme"
               data-x="left" data-hoffset="0"
               data-y="center" data-voffset="-100"
-              data-speed="800"
-              data-start="800"
+              data-speed="300"
+              data-start="300"
               data-easing="Power3.easeInOut"
               data-splitin="chars"
               data-splitout="none"
               data-elementdelay="0.07"
               data-endelementdelay="0.1"
               data-endspeed="300"
-              style="z-index: 6; font-size:120px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= @words.sample %> </div>
+              style="z-index: 6; font-size:80px; color:#fff; text-transform:uppercase; white-space: nowrap;">MOUSSAILLON</div>
               <!-- LAYER NR. 2 -->
               <div class="tp-caption sfr font-extra-bold tp-resizeme"
               data-x="left" data-hoffset="100"
@@ -65,13 +65,13 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"><%= @words.sample %> </div>
+            style="z-index: 8;"></div>
           </li>
 
           <!-- SLIDE  -->
           <li data-transition="random" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" >
             <!-- MAIN IMAGE -->
-            <img src="https://unsplash.it/1000/600"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+            <img src="<%= cl_image_path @recent_scenes.sample.banner.path %>"  alt="slider"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
             <!-- LAYERS -->
             <!-- LAYER NR. 1 -->
             <div class="tp-caption font-playfair sfb tp-resizeme"
@@ -85,7 +85,7 @@
             data-elementdelay="0.1"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 7; font-size:18px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;"><%= @words.sample %></div>
+            style="z-index: 7; font-size:80px; color:#fff; max-width: auto; max-height: auto; white-space: nowrap;">Tailor made</div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-regular tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
@@ -98,7 +98,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= @words.sample  %></div>
+            style="z-index: 6; font-size:78px; color:#fff; text-transform:uppercase; white-space: nowrap;"></div>
             <!-- LAYER NR. 2 -->
             <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4"
             data-x="center" data-hoffset="0"
@@ -111,7 +111,7 @@
             data-elementdelay="0.07"
             data-endelementdelay="0.1"
             data-endspeed="300"
-            style="z-index: 6; font-size:140px; color:#fff; text-transform:uppercase; white-space: nowrap;"><%= "furniture"  %></div>
+            style="z-index: 6; font-size:100px; color:#fff; text-transform:uppercase; white-space: nowrap;">Hardwood</div>
             <!-- LAYER NR. 4 -->
             <div class="tp-caption sfb font-extra-bold tp-resizeme"
             data-x="center" data-hoffset="120"
@@ -136,7 +136,7 @@
             data-endelementdelay="0.1"
             data-endspeed="300"
             data-scrolloffset="0"
-            style="z-index: 8;"> <%=  @words.sample  %> </div>
+            style="z-index: 8;"></div>
           </li>
         </ul>
       </div>
