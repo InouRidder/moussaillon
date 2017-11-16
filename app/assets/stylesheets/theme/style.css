@@ -4460,3 +4460,7 @@ IMAGES
   max-width: 100%;
 }
 
+.img-bordered {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px lightgrey;
+}
