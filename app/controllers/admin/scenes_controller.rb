@@ -3,7 +3,7 @@ module Admin
   layout 'admin'
   before_action :authenticate_user!
   before_action :set_scene, only: [:show, :edit, :update, :destroy, :add_product]
-
+  before_action :set_product, only: [:add_product]
     def new
       @scene = Scene.new
     end
@@ -34,17 +34,11 @@ module Admin
     end
 
     def add_product
-      product_id = params[:scene].fetch(:products)
-      unless product_id == ""
-        product = Product.find(product_id)
-        product.scene = @scene
-        if product.save
-          redirect_to admin_scene_path(@scene)
-        else
-          render :show
-        end
+      @product.scene = @scene
+      if @product.save
+        redirect_to admin_scene_path(@scene)
       else
-        flash[:alert] = "Don't forget to add a product!"
+        @products = Product.all - @scene.products
         render :show
       end
     end
@@ -66,9 +60,14 @@ module Admin
 
   private
 
-     def set_scene
+    def set_scene
       @scene = Scene.find(params[:id])
     end
+
+    def set_product
+      @product = Product.find(params.require(:scene).fetch(:products))
+    end
+
 
     def scene_params
       params.require(:scene).permit(:title, :description, :banner)

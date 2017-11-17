@@ -18,7 +18,7 @@
        <h2><%= product.name %></h2>
        <p><%= product.price %>€</p>
        <p><%= product.description %></p>
-       <%= button_to "Remove product", remove_product_admin_scene_path(product), class: 'btn btn-danger', method: :patch, data: {confirm: "Are you sure?"} %>
+       <%= button_to "Remove product", remove_product_admin_scene_path(product), class: 'btn btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
       </div>
        <%end%>
       </div>
@@ -26,7 +26,7 @@
       <h4>
         Add a new product
       </h4>
-        <%= simple_form_for @scene, :url => url_for(:action => 'add_product', :controller => 'scenes'), :method => :patch,  html: {class: 'form-horizontal'} do |f| %>
+        <%= simple_form_for @scene, :url => add_product_admin_scene_path, :method => :post,  html: {class: 'form-horizontal'} do |f| %>
           <%= f.input :products, collection: @products, label: false, input_html: { class: 'dropdown-form-scene-show'}  %>
           <%= f.submit 'Add Product', class: "btn btn-primary"%>
         <% end %>
