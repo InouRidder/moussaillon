@@ -33,8 +33,8 @@ Rails.application.routes.draw do
 
     resources :scenes do
       member do
-        patch :remove_product
-        patch :add_product
+        delete :remove_product
+        post :add_product
       end
     end
 
