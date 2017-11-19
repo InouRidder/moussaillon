@@ -1,6 +1,7 @@
 class Product < ApplicationRecord
 
   belongs_to :scene, optional: true
+
   has_attachments :photos, maximum: 5
   include PgSearch
   pg_search_scope :search_name_and_description, against: [:name, :description, :category], using: {tsearch: {prefix: true, dictionary: "english"}}
