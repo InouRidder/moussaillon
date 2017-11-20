@@ -13,6 +13,10 @@
   overflow:hidden;
   text-align: center;
 }
+
+#loader img {
+  width: 85%;
+}
 @media(max-width: 500px) {
   #loader img{
     width: 80%;
