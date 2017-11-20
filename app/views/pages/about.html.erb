@@ -1,31 +1,5 @@
 <!-- Content -->
-
-<style>
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 100%;
-  z-index: 1;
-}
-
-.videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: 100vw;
-  height: auto;
-}
-</style>
-
 <div id="content">
-  <section class="video-wrapper">
-    <!-- Copy & Pasted from YouTube -->
-    <iframe style="pointer-events: none;" width="100%" height="600px" src="https://www.youtube.com/embed/9PKjNUr_LYo?autoplay=1&modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0"></iframe>
-  </section>
-
   <!-- History -->
   <section class="history-block padding-bottom-100" style="padding-top: 82px;">
     <div class="container">
@@ -33,155 +7,120 @@
         <div class="col-xs-10 center-block">
           <div class="col-sm-9 center-block">
             <div class= "text-center" style="font-size: 18px; font-weight: bold; line-height: 36px; word-spacing: 5px;">
-            <p> We know you need your furnitures to last<br>
-              We know you want them to be unique, your place is<br>
-              We know details are everything<br>
-              We know taste is personnal, harmony isn’t<br>
-              We know sometimes life happens, everything we do can be repair<br>
-              We know you’re busy, we deliver worldwide<br>
-              We know you care, we keep you posted every step of the way<br>
-              We know you care, we make belgian products<br>
-              We know you care, we are Mousaillon <br>
-            </p>
-          </div>
+              <p> We know you need your furnitures to last<br>
+                We know you want them to be unique, your place is<br>
+                We know details are everything<br>
+                We know taste is personnal, harmony isn’t<br>
+                We know sometimes life happens, everything we do can be repair<br>
+                We know you’re busy, we deliver worldwide<br>
+                We know you care, we keep you posted every step of the way<br>
+                We know you care, we make belgian products<br>
+                We know you care, we are Moussaillon <br>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- OUR TEAM -->
-    <section class="our-team light-gray-bg padding-top-150 padding-bottom-100">
-      <div class="container">
-        <div class="heading text-center">
-          <h4>TEAM</h4>
+  <!-- OUR TEAM -->
+  <section class="our-team light-gray-bg padding-top-150 padding-bottom-100">
+    <div class="container">
+      <div class="heading text-center">
+        <h4>TEAM</h4>
       </div>
 
-          <!-- TEAM -->
-          <ul class="row">
+      <!-- TEAM -->
+      <ul class="row">
 
-            <!-- Member -->
-            <li class="col-md-6 text-center">
-              <article>
-                <!-- abatar -->
-                <%= image_tag 'john_borderless.jpg', class: "img-bordered", height: '400px' %>
-                  <!-- Team hover -->
-                <!-- Team Detail -->
-                <div class="team-names">
-                  <h6>John Helson</h6>
-                  <p>Wood specialist / Designer</p>
-                  <p>Working together on the same missions for several years brought us the energy to create a furniture brand. A few months ago we started to make furnitures in our workshops near Brussels. Moussaillon is the result of that work.</p>
-                  <p> Tel: +32 (0) 471 42 48 79</p>
-                  <p>Johnhelson@moussaillon.be</p>
-                </div>
-              </article>
-            </li>
+        <!-- Member -->
+        <li class="col-md-6 text-center">
+          <article>
+            <!-- abatar -->
+            <%= image_tag 'john_borderless.jpg', class: "img-bordered", height: '400px' %>
+            <!-- Team hover -->
+            <!-- Team Detail -->
+            <div class="team-names">
+              <h6>John Helson</h6>
+              <p>Wood specialist / Designer</p>
+              <p> Tel: +32 (0) 471 42 48 79</p>
+              <p>Johnhelson@moussaillon.be</p>
+            </div>
+          </article>
+        </li>
 
-            <!-- Member -->
-            <li class="col-md-6 text-center">
-              <article>
-                <!-- abatar -->
+        <!-- Member -->
+        <li class="col-md-6 text-center">
+          <article>
+            <!-- abatar -->
 
-                <%= image_tag 'ludo_borderless.jpg', class: "img-bordered", height: '400px' %>
-                  <!-- Team hover -->
+            <%= image_tag 'ludo_borderless.jpg', class: "img-bordered", height: '400px' %>
+            <!-- Team hover -->
 
-                <!-- Team Detail -->
-                <div class="team-names">
-                  <h6>Ludo Branders</h6>
-                  <p>Steel designer / 3D Drawer</p>
-                  <p>Working together on the same missions for several years brought us the energy to create a furniture brand. A few months ago we started to make furnitures in our workshops near Brussels. Moussaillon is the result of that work.</p>
-                  <p>Tel: +32 (0) 472 20 88 91</p>
-                  <p>Ludobranders@moussaillon.be</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+            <!-- Team Detail -->
+            <div class="team-names">
+              <h6>Ludo Branders</h6>
+              <p>Steel designer / 3D Drawer</p>
+              <p>Tel: +32 (0) 472 20 88 91</p>
+              <p>Ludobranders@moussaillon.be</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="text-center " style="font-size: 18px; font-weight: bold; line-height: 36px; word-spacing: 3px; letter-spacing: 1.5px;">
+          <p>
+            Working together on the same missions for several years brought us the energy to create a furniture brand. A few months ago we started to make furnitures in our workshops near Brussels. Moussaillon is the result of that work.
+          </p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
 
 
-      <!-- WORK WITH US -->
-      <section class="our-team padding-top-150 padding-bottom-100">
-        <div class="container">
-          <div class=" text-left">
-            <h4>They thought ...</h4>
-            <br>
-            <br>
-            <br>
+
+
+  <!-- WORK WITH US -->
+  <section class="our-team padding-top-150 padding-bottom-100">
+    <div class="container">
+      <div class=" text-left">
+        <h4>They thought ...</h4>
+        <br>
+        <br>
+        <br>
 
 
 
-            <ul class="text-center" style="word-spacing:40px; font-size: 18px; font-weight: bold; line-height: 36px;">
-              <p>  <span class="close-class" style="word-spacing: 3px !important">Tailor made</span>  Wood    Handcraft     Steel    Origin   </p>
-              <p> Leather   Useful    Timeless    <span class="close-class" style="word-spacing: 3px !important">Top of the range </span>    </p>
-              <p>  Robust    Local   Taste    Shape     Carved  </p>
-              <p> Beautiful    Hardwood    Noble   Stones    Perfect   </p>
-              <p> Unique  </p>
-            </ul>
-            <br>
-            <br>
-            <br>
-              <h4 class ="text-right">... Moussaillon was born </h4>
-          </div>
-        </section>
+        <ul class="text-center" style="word-spacing:40px; font-size: 18px; font-weight: bold; line-height: 36px;">
+          <p>  <span class="close-class" style="word-spacing: 3px !important">Tailor made</span>  Wood    Handcraft     Steel    Origin   </p>
+          <p> Leather   Useful    Timeless    <span class="close-class" style="word-spacing: 3px !important">Top of the range </span>    </p>
+          <p>  Robust    Local   Taste    Shape     Carved  </p>
+          <p> Beautiful    Hardwood    Noble   Stones    Perfect   </p>
+          <p> Unique  </p>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <h4 class ="text-right">... Moussaillon was born </h4>
+      </div>
+    </div>
+  </section>
 
-        <!-- About -->
-        <section class="small-about padding-top-150 padding-bottom-150">
-          <div class="container">
+  <!-- About -->
+  <section class="small-about padding-top-150 padding-bottom-150">
+    <div class="container">
+
+      <ul class="social_icons">
+        <li><a href="#." class="like-us" data-toggle="modal" data-target="#modal-1"><i class="fa fa-pinterest fa-3x" fa-3x"></i></a> </li>
+        <li><a href="https://www.facebook.com/moussaillonfurniture"><i class="fa fa-facebook fa-3x"></i></a></li>
+        <li><a href="https://www.instagram.com/moussaillonmaker/"><i class="fa fa-instagram fa-3x"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
+      </ul>
+    </div>
+  </section>
+</div>
 
 
-
-            <!-Social Icons -->
-            <ul class="social_icons">
-              <li><a href="#." class="like-us" data-toggle="modal" data-target="#modal-1"><i class="fa fa-pinterest fa-3x" fa-3x"></i></a> </li>
-              <li><a href="https://www.facebook.com/moussaillonfurniture"><i class="fa fa-facebook fa-3x"></i></a></li>
-              <li><a href="https://www.instagram.com/moussaillonmaker/"><i class="fa fa-instagram fa-3x"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
-            </ul>
-          </div>
-        </section>
-
-<div></div>
-
-<script>
-  // Find all YouTube videos
-var $allVideos = $("iframe[src^='//www.youtube.com']"),
-
-    // The element that is fluid width
-    $fluidEl = $("body");
-
-// Figure out and save aspect ratio for each video
-$allVideos.each(function() {
-
-  $(this)
-    .data('aspectRatio', this.height / this.width)
-
-    // and remove the hard coded width/height
-    .removeAttr('height')
-    .removeAttr('width');
-
-});
-
-// When the window is resized
-$(window).resize(function() {
-
-  var newWidth = $fluidEl.width();
-
-  // Resize all videos according to their own aspect ratio
-  $allVideos.each(function() {
-
-    var $el = $(this);
-    $el
-      .width(newWidth)
-      .height(newWidth * $el.data('aspectRatio'));
-
-  });
-
-// Kick off one resize to fix all videos on page load
-}).resize();
-
-var player =  iframe.getElementById('player');
-player.mute();
-
-</script>
 

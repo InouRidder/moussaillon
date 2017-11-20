@@ -9,6 +9,7 @@ class ProductsController < ApplicationController
   def index
     @query = params[:type] || 'all'
     if query = params[:search]
+      @query = query
       @products = Product.search_name_and_description(query)
       @info_title = "Results for #{query}"
     elsif type = params[:type]
