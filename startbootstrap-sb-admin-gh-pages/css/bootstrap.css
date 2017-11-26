@@ -3478,8 +3478,8 @@ input[type="button"].btn-block {
 }
 .collapse.in {
   display: block;
-  position: absolute;
-  z-index: 999;
+  position: absolute !important;
+  z-index: 999 !important;
 }
 tr.collapse.in {
   display: table-row;
