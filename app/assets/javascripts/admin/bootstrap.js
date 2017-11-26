@@ -545,8 +545,8 @@ if (typeof jQuery === 'undefined') {
 
 /* jshint latedef: false */
 
-+function ($) {
-  'use strict';
+// +function ($) {
+//   'use strict';
 
   // COLLAPSE PUBLIC CLASS DEFINITION
   // ================================
