@@ -34,17 +34,6 @@
 //= require gmaps/google
 
 
-const button = document.getElementById('navbar-toggle-btn')
-const video = document.getElementById('bgvid')
-
-button.addEventListener("click", function(event){
-      if (video.style.display == "") {
-        video.style.display = "none";
-    } else {
-        video.style.display = "";
-    }
-});
-
 
 
 
