@@ -1,0 +1,22 @@
+
+@media(min-width: 910px) {
+  .scene-banner {
+    min-height: 100vh;
+  }
+}
+@media(max-width: 910px) {
+  .scene-banner {
+    min-height: 500px;
+  }
+}
+@media(max-width: 500px) {
+  .scene-banner {
+    min-height: 400px;
+  }
+}
+
+@media(max-width: 500px) {
+  #diminished-padding-response {
+    padding-top: -50px !important;
+ }
+}

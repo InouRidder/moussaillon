@@ -1,0 +1,54 @@
+
+.scene-banner {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+
+.next-button {
+  position: absolute;
+  top: 30%;
+  right: 1%;
+}
+
+.previous-button {
+  position: absolute;
+  top: 30%;
+  left: 1%;
+}
+
+.rotation-button {
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  align-text: center;
+}
+
+.rotation-button:hover {
+  color: #2C3A4C;
+  background-color: rgba(200,200,200,0.6)
+}
+
+.btn-buy{
+  color: #2C3A4C;
+  border: 1px solid #2C3A4C;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+.btn-buy:hover {
+  opacity: 1;
+  text-decoration: none;
+  color:#2C3A4C;
+}
+
+.btn-opague {
+  background-color: rbga(255,255,255,1);
+  color: white !important;
+  padding: 30px;
+  border-radius: 4px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

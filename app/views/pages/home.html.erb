@@ -1,5 +1,8 @@
-<section class="videoWrapper">
-  <iframe id="myVideo" style="pointer-events: none;" width="100%" src="https://www.youtube.com/embed/9PKjNUr_LYo?version=3&autoplay=1&modestbranding=1&autohide=1&showinfo=1&controls=0&loop=1&autohide=1&mute=1&playlist=9PKjNUr_LYo" frameborder="0"></iframe>
+ <section class="videoWrapper">
+  <video playsinline autoplay muted loop poster="<%= image_path 'logomark_black_v2.png' %>" id="bgvid">
+      <source src="<%= video_path 'moussaillon_low.webm' %>" type="video/webm">
+      <source src="<%= video_path 'moussaillon_low.mp4' %>" type="video/mp4">
+  </video>
 </section>
 
 <!-- Knowledge Share -->
@@ -7,7 +10,7 @@
   <div class="container">
 
     <!-- Main Heading -->
-   <!--  <div class="heading text-center">
+    <div class="heading text-center">
       <h4>
         your place
         <br>
@@ -19,7 +22,7 @@
       <p>
         MOUSSAILLON - FURNITURE MAKERS
       </p>
-    </div> -->
+    </div>
         <div class="heading text-center padding-top-150 padding-bottom-50">
         <h5>
           Our latest work
