@@ -4198,6 +4198,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse.in {
   overflow-y: auto;
+  z-index: 99 !important;
 }
 @media (min-width: 768px) {
   .navbar-collapse {
