@@ -4438,7 +4438,7 @@ SELECT MENU PRODUCT INDEX
   padding: 5px 10px;
   letter-spacing: 2px;
   min-width: 80px;
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .nav-active {
