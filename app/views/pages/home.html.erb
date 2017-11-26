@@ -1,3 +1,17 @@
+<script>
+  // Hiding video on mobile
+const button = document.getElementById('navbar-toggle-btn')
+const video = document.getElementById('bgvid')
+
+button.addEventListener("click", function(event){
+  if (video.style.display == "") {
+      video.style.display = "none";
+  } else {
+      video.style.display = "";
+  }
+});
+</script>
+
  <section class="videoWrapper">
   <video playsinline autoplay muted loop poster="<%= image_path 'logomark_black_v2.png' %>" id="bgvid">
       <source src="<%= video_path 'moussaillon_low.webm' %>" type="video/webm">
