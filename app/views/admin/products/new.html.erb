@@ -36,7 +36,9 @@
       <br>
       <%= f.input :price, :input_html => {class: "form-control", placeholder: "Price" }, label: false %>
       <br>
-      <%= f.input :material, :input_html => {class: "form-control", label: "Description"  } %>
+      <%= f.input :designer, :input_html => {class: "form-control", label: "Designer"  } %>
+      <br>
+      <%= f.input :material, :input_html => {class: "form-control", label: "Material"  } %>
       <br>
       <%= f.input :category, collection: ["see", "live", "eat", "sleep", "sit"], :input_html => {class: "form-control", label: "Category"  } %>
       <br>
