@@ -1,3 +1,4 @@
+
 <header>
   <div class="">
     <div class="container" style="display: flex; justify-content: flex-start;">
@@ -6,12 +7,12 @@
       </div>
       <nav class="navbar ownmenu">
       <div class="navbar-header" style="flex-grow: 3;">
-        <button type="button" id="navbar-toggle-btn" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-open-btn" aria-expanded="false"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"><i class="fa fa-navicon"></i></span>
+        <button type="button" class="navbar-toggle" data-toggle="#drop-down-nav" data-target="#drop-down-nav"> <span class="icon-bar"><i class="fa fa-navicon"></i></span>
         </button>
       </div>
 
       <!-- NAV -->
-      <div class="collapse navbar-collapse" id="nav-open-btn">
+      <div class="" id="drop-down-nav">
         <ul class="nav">
           <li class="dropdown">
             <%= link_to "Scenes", scene_path(Scene.last) if Scene.last %>

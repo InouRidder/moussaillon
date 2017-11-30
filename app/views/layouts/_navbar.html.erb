@@ -1,0 +1,70 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="<%= image_path 'logo_black_v2.png' %>" alt="logo" , class='image-responsive'>
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <%= link_to "Scenes", scene_path(Scene.last), class: "navbar-wagon-item navbar-wagon-link" if Scene.last %>
+
+    <a href="/collection" class="navbar-wagon-item navbar-wagon-link">    Collection
+    </a>
+    <a href="/about" class="navbar-wagon-item navbar-wagon-link">
+      About
+    </a>
+    <a href="javascript:void(0);" class="search-open">Search</a>
+
+
+
+
+
+    <!-- Profile picture with dropdown list -->
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li>
+          <%= link_to "SCENES", scene_path(Scene.last), class: "navbar-wagon-item navbar-wagon-link" if Scene.last %>
+        </li>
+        <li>
+          <a href="/collection" class="navbar-wagon-item navbar-wagon-link">    COLLECTION
+          </a>
+        </li>
+        <li>
+          <a href="/about" class="navbar-wagon-item navbar-wagon-link">
+            ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="search-open">SEARCH</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="nav-right">
+  <ul class="navbar-right">
+
+    <!-- SEARCH BAR -->
+
+    <li class="dropdown">
+      <div class="search-inside animated bounceInUp"><i class="fa fa-search-minus search-close"></i>
+        <div class="search-overlay"></div>
+        <div class="position-center-center">
+          <div class="search">
+            <form action="/collection" method="get">
+              <input name="search" type="search" placeholder="Search Shop">
+              <button type="submit"><i class="fa fa-search" ></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
