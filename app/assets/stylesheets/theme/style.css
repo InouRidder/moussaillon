@@ -2158,7 +2158,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .our-team .team-names h6 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   margin-top: 0px;
   color: #2d3a4b;
   text-transform: uppercase;
@@ -2166,7 +2166,7 @@ header .is-sticky .sticky .user-basket .dropdown-menu {
 }
 .our-team .team-names p {
   color: #666666;
-  font-size: 12px;
+  font-size: 20px;
 }
 .our-team-small .avatar {
   height: 200px;
