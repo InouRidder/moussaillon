@@ -28,9 +28,9 @@
 
               <!-- Sale Tags -->
               <ul class="item-owner">
-                <li>Designer :<span> Ludo</span></li>
+                <li>Designer :<span> <%= @product.designer.try(:capitalize) %></span></li>
                 <li>Material:<span> <%= @product.material.try(:capitalize) %></span></li>
-                <li>Price:<span> <%= @product.price %> </span></li>
+                <li>Price:<span> € <%= @product.price %> </span></li>
               </ul>
 
               <!-- Item Detail -->

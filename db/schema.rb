@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170904155720) do
+ActiveRecord::Schema.define(version: 20171130105950) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20170904155720) do
     t.string "category"
     t.json "pictures"
     t.string "material"
+    t.string "designer"
     t.index ["scene_id"], name: "index_products_on_scene_id"
   end
 
