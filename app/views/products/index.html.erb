@@ -25,7 +25,6 @@
         </div>
 
         <!-- Products Select -->
-       <!--  -->
       </div>
 
       <!-- Popular Item Slide -->
@@ -69,20 +68,7 @@
   </div>
 </section>
 
-<!-- <script>
-  // Hiding video on mobile
-const button = document.getElementById('navbar-toggle-btn')
-const shopPage = document.getElementById('shop-page')
 
-button.addEventListener("click", function(event){
-  if (shopPage.style.display == "") {
-      shopPage.style.display = "none";
-  } else {
-      shopPage.style.display = "";
-  }
-});
-</script>
- -->
 <% content_for(:after_js) do %>
   <script>
     $("#<%= @query %>").addClass('nav-active');
