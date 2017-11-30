@@ -14,11 +14,14 @@
   <div class="row">
     <div class="col-sm-6 col-xs-12">
        <% @scene.products.each do |product|%>
-      <div class="col-xs-6 pull-left ">
+      <div class="col-xs-6 pull-left">
        <h2><%= product.name %></h2>
        <p><%= product.price %>€</p>
        <p><%= product.description %></p>
-       <%= button_to "Remove product", remove_product_admin_scene_path(product), class: 'btn btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+         <div class="buttons" style="display: flex;">
+           <%= button_to "Remove product", remove_product_admin_scene_path(product), class: 'btn btn-danger', method: :delete, data: {confirm: "Are you sure?"} %>
+           <%= link_to "Show", admin_product_path(product), class: 'btn btn-primary' %>
+         </div>
       </div>
        <%end%>
       </div>
