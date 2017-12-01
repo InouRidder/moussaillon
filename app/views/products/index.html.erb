@@ -29,41 +29,36 @@
 
       <!-- Popular Item Slide -->
 
-      <div class="shop-items row">
+            <ul class="row">
+        <div class="shop-items row">
 
-        <% @products.each do |product| %>
+          <% @products.each do |product| %>
 
-        <!-- Item -->
-        <div class="col-md-6">
-          <div class="item">
-            <!-- Item Name -->
-            <div class="item-name"> <a href="#."><%= product.name %></a>
-            </div>
-            <!-- Item img -->
-            <%= link_to product_path(product) do %>
-            <div class="item-img">
-              <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> alt="" style="width: 100%; max-height: 400px;">
-              <div class="inn">
-                <a href="<%= product_path(product) %>"> Show <a href="#.">
-              </a>
+          <!-- Item -->
+          <div class="col-xs-12 col-sm-6">
+            <div class="item">
+              <!-- Item Name -->
+              <div class="item-name"> <a href="#."><%= product.name %></a>
+<!--                 <p><%#= product.description %></p>
+                <p> Added on <%#= product.created_at.strftime("%A, %b %d") %></p> -->
+              </div>
+              <!-- Item img -->
+              <%= link_to product_path(product) do %>
+              <div class="item-img">
+                <img class="img-1" src=<%= cl_image_path product.photos.first.path, size: '700x710', crop: :fill unless product.photos.blank? %> alt="" width="100%">
+                <div class="inn">
+                  <a href="<%= product_path(product) %>"> Show <a href="#.">
+                  </a>
+                </div>
+              </div>
+              <% end %>
+              <!-- Price -->
             </div>
           </div>
           <% end %>
-          <!-- Price -->
-        </div>
-      </div>
-      <% end %>
 
-      <!-- Pagination -->
-<!--         <ul class="pagination in-center">
-          <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-        </ul> -->
 
-      </div>
+        </ul>
     </div>
   </div>
 </section>
