@@ -1143,12 +1143,12 @@ header .user-basket .dropdown-menu{
   .sub-bnr {
     min-height: 300px;
   }
-  .item {
+  /*.item {
     height: 400px;
-  }
+  }*/
 }
 
-@media(max-width:700px) {
+/*@media(max-width:700px) {
   .item {
     height: 500px;
   }
@@ -1157,4 +1157,4 @@ header .user-basket .dropdown-menu{
   .item {
     height: 600px;
   }
-}
+}*/

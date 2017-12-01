@@ -38,7 +38,7 @@
 
           <!-- Item -->
           <div class="col-xs-12 col-sm-6">
-            <div class="item">
+            <div class="item" style="max-height: 800px;">
               <!-- Item Name -->
               <div class="item-name"> <a href="#."><%= product.name %></a>
 <!--                 <p><%#= product.description %></p>
@@ -47,7 +47,7 @@
               <!-- Item img -->
               <%= link_to product_path(product) do %>
               <div class="item-img">
-                <img class="img-1" src=<%= cl_image_path product.photos.first.path, , size: '700x710', crop: :fill, unless product.photos.blank? %> alt="">
+                <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> style="width: 100%;" alt="">
                 <div class="inn">
                   <a href="<%= product_path(product) %>"> Show <a href="#.">
                   </a>

@@ -36,24 +36,24 @@
           <% @scene.products.each do |product| %>
 
           <!-- Item -->
-          <div class="col-xs-12 col-sm-6" style="margin: 10px 0px;">
-            <div class="item">
+          <div class="col-xs-12 col-sm-6">
+            <div class="item" style="max-height: 800px;">
               <!-- Item Name -->
               <div class="item-name"> <a href="#."><%= product.name %></a>
+<!--                 <p><%#= product.description %></p>
+                <p> Added on <%#= product.created_at.strftime("%A, %b %d") %></p> -->
               </div>
               <!-- Item img -->
               <%= link_to product_path(product) do %>
               <div class="item-img">
-                <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> alt="" style="width: 100%; height: 400px;">
+                <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> style="width: 100%;" alt="">
                 <div class="inn">
-                  <a href="<%= product_path(product) %>">
-                    Show
-                    <a href="#.">
-                    </a>
+                  <a href="<%= product_path(product) %>"> Show <a href="#.">
                   </a>
                 </div>
               </div>
               <% end %>
+              <!-- Price -->
             </div>
           </div>
           <% end %>
