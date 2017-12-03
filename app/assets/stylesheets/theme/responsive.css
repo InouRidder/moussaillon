@@ -1152,9 +1152,28 @@ header .user-basket .dropdown-menu{
   .item {
     height: 600px;
   }
+  .home-introduction {
+    padding-top: 50px;
+  }
+  .latest-work {
+    padding-bottom: 50px;
+  }
 }
 @media(min-width:700px) {
   .item {
     height: 750px;
   }
+  .home-introduction {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .latest-work {
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+}
+
+
+#padding-top-0 {
+  padding-top: 0 !important;
 }

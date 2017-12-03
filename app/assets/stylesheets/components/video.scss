@@ -15,3 +15,14 @@
   height: 100%;
 }
 
+@media(max-width: 500px) {
+  .videoWrapper video {
+      position: absolute;
+      top: 37px;
+      /* left: -7px; */
+      min-width: 100%;
+      min-height: 100%;
+      width: 100vw;
+      height: 100%;
+  }
+}
