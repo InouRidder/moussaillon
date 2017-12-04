@@ -1192,3 +1192,11 @@
   padding-top: 0 !important;
 }
 
+
+
+@media(max-width: 990) {
+  .dropdown-toggle {
+    position: static;
+    width: 100%;
+  }
+}
