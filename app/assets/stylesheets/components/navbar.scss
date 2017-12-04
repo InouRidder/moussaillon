@@ -129,9 +129,10 @@
   border-top: 1px solid #E6E6E6;
 }
 
-@media(max-width: 990) {
-  .dropdown-toggle {
-    position: static;
-    width: 100%;
-  }
+
+.dropdown-toggle {
+  position: static;
+  width: 100%;
+  z-index: 2500 !important;
 }
+
