@@ -7,26 +7,28 @@
 
 .next-button {
   position: absolute;
-  top: 30%;
+  top: 10%;
   right: 1%;
 }
 
 .previous-button {
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 1%;
 }
 
 .rotation-button {
   color: white;
   padding: 15px;
-  border-radius: 50%;
   align-text: center;
+  font-size: 40px;
 }
 
 .rotation-button:hover {
   color: #2C3A4C;
-  background-color: rgba(200,200,200,0.6)
+  background-color: rgba(240,240,240,0.3);
+  border-radius: 4px;
+  font-size: 50px;
 }
 
 .btn-buy{

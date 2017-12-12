@@ -1,5 +1,3 @@
-
-
  <section class="videoWrapper">
   <video playsinline autoplay muted loop poster="<%= image_path 'logo_black.svg' %>" id="bgvid">
       <source src="<%= video_path 'moussaillon_low.webm' %>" type="video/webm">
@@ -40,7 +38,7 @@
           <div class="col-xs-12 col-sm-6">
             <div class="item" id="<%= 'padding-top-0' if index == 0 %>">
               <!-- Item Name -->
-              <div class="item-name"> <a href="#."><%= product.name %></a>
+              <div class="item-name" style="text-align: center !important;"> <a href="#." ><%= product.name %></a>
 <!--                 <p><%#= product.description %></p>
                 <p> Added on <%#= product.created_at.strftime("%A, %b %d") %></p> -->
               </div>
