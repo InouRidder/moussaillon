@@ -36,9 +36,9 @@ ActiveRecord::Schema.define(version: 20171130105950) do
     t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo"
     t.bigint "scene_id"
     t.string "category"
-    t.json "pictures"
     t.string "material"
     t.string "designer"
     t.index ["scene_id"], name: "index_products_on_scene_id"
