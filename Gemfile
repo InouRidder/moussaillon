@@ -34,6 +34,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'jquery-rails'
 
+gem 'friendly_id', '~> 5.2.0'
 
 gem 'cloudinary', '1.1.7'
 gem 'attachinary', github: 'assembler/attachinary'
