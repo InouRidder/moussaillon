@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
 
   def show
-    @product = Product.find(params[:id].to_i)
+    @product = Product.friendly.find(params[:id])
   end
 
 # was thinking instead of making a shop / index / result page, just do an index one and set the products based on the params. What do you think?
