@@ -31,13 +31,13 @@
             <td><%= scene.title %></td>
             <td><%= scene.description %></td>
             <td><%= link_to 'Show', admin_scene_path(scene),
-              :class => "btn btn-primary"%></td>
+              :class => "btn btn-primary", rel: "nofollow", target: "_blank"%></td>
               <td><%= link_to 'Edit', edit_admin_scene_path(scene),
-                :class => "btn btn-warning"%></td>
+                :class => "btn btn-warning", rel: "nofollow", target: "_blank"%></td>
                 <td><%= link_to 'Destroy', admin_scene_path(scene),
                   confirm: 'Are you sure?',
                   method: :delete,
-                  :class => "btn btn-danger"%></td>
+                  :class => "btn btn-danger", rel: "nofollow", target: "_blank"%></td>
                 </tr>
               </tbody>
               <% end %>

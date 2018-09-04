@@ -1,10 +1,11 @@
+<h1 hidden>Moussaillon | Furniture | Oak Table | Marble | Steel</h1>
 <section class="banner-show" id="scene-banner-display">
   <div class="scene-banner" style="background-image: url('<%= cl_image_path @scene.banner.path %>'); background-size: 100%; background-repeat: no-repeat;">
   </div>
 
   <div class="button-positioner">
-    <%= link_to "", scene_path(@previous_scene), class: "fa fa-angle-left fa-2x previous-button rotation-button" %>
-    <%= link_to "", scene_path(@next_scene), class: "fa fa-angle-right fa-2x  next-button rotation-button" %>
+    <%= link_to "", scene_path(@previous_scene), class: "fa fa-angle-left fa-2x previous-button rotation-button", rel: "nofollow", target: "_blank" %>
+    <%= link_to "", scene_path(@next_scene), class: "fa fa-angle-right fa-2x  next-button rotation-button", rel: "nofollow", target: "_blank" %>
   </div>
 </section>
 <!-- Popular Products -->
@@ -44,7 +45,7 @@
                 <p> Added on <%#= product.created_at.strftime("%A, %b %d") %></p> -->
               </div>
               <!-- Item img -->
-              <%= link_to product_path(product) do %>
+              <%= link_to product_path(product), rel: "nofollow", target: "_blank" do %>
               <div class="item-img">
                 <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> style="width: 100%;" alt="">
                 <div class="inn">

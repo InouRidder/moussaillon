@@ -15,7 +15,7 @@
       <div class="" id="drop-down-nav">
         <ul class="nav">
           <li class="dropdown">
-            <%= link_to "Scenes", scene_path(Scene.last) if Scene.last %>
+            <%= link_to "Scenes", scene_path(Scene.last) if Scene.last, rel: "nofollow", target: "_blank" %>
           </li>
           <li class="dropdown">
             <a href="/collection">

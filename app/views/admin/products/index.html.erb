@@ -49,13 +49,13 @@
             <td><%= product.description %></td>
             <td><%= product.price %></td>
             <td><%= link_to 'Show', admin_product_path(product),
-              :class => "btn btn-primary"%></td>
+              :class => "btn btn-primary", rel: "nofollow", target: "_blank" %></td>
               <td><%= link_to 'Edit', edit_admin_product_path(product),
-                :class => "btn btn-warning"%></td>
+                :class => "btn btn-warning", rel: "nofollow", target: "_blank"%></td>
                 <td><%= link_to 'Destroy', admin_product_path(product),
                   data: {confirm: 'Are you sure?'},
                   method: :delete,
-                  :class => "btn btn-danger"%></td>
+                  :class => "btn btn-danger", rel: "nofollow", target: "_blank"%></td>
                 </tr>
               </tbody>
               <% end %>
