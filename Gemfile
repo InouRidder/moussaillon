@@ -8,7 +8,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'instagram'
-# gem 'instafeed'
+gem 'instafeed'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use Puma as the app server
