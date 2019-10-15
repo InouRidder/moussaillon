@@ -36,35 +36,6 @@
 <% end %>
   </div>
 </div>
-    <div class="knowledge-share">
-      <ul class="row">
-        <div class="shop-items row">
 
-          <% @latest_products.each_with_index do |product, index| %>
-
-          <!-- Item -->
-          <div class="col-xs-12 col-sm-6">
-            <div class="item" id="<%= 'padding-top-0' if index == 0 %>">
-              <!-- Item Name -->
-              <div class="item-name" style="text-align: center !important;"> <a href="#." ><%= product.name %></a>
-<!--                 <p><%#= product.description %></p>
-                <p> Added on <%#= product.created_at.strftime("%A, %b %d") %></p> -->
-              </div>
-              <!-- Item img -->
-              <%= link_to product_path(product) do %>
-              <div class="item-img">
-                <img class="img-1" src=<%= cl_image_path product.photos.first.path unless product.photos.blank? %> style="width: 100%;" alt="">
-                <div class="inn">
-                  <a href="<%= product_path(product) %>"> Show <a href="#.">
-                  </a>
-                </div>
-              </div>
-              <% end %>
-              <!-- Price -->
-            </div>
-          </div>
-          <% end %>
-        </ul>
-      </div>
     </div>
   </section>
