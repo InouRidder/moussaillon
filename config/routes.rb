@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   mount Attachinary::Engine => "/attachinary"
 
-  root to: 'pages#home'
+   root to: 'pages#home'
 
+   # get '/instahome' => 'pages#instahome'
   # gem high voltage to use a helper method for static pages
 
   get '/contact' => 'pages#contact'

@@ -1,9 +1,4 @@
- <section class="videoWrapper">
-  <video playsinline autoplay muted loop poster="<%= image_path 'logo_black.svg' %>" id="bgvid">
-      <source src="<%= video_path 'moussaillon_low.webm' %>" type="video/webm">
-      <source src="<%= video_path 'moussaillon_low.mp4' %>" type="video/mp4">
-  </video>
-</section>
+
 
 <!-- Knowledge Share -->
 <section class="home-introduction">
@@ -23,11 +18,24 @@
         MOUSSAILLON - FURNITURE MAKERS
       </p>
     </div>
-        <div class="heading text-center latest-work">
+        <!-- <div class="heading text-center latest-work">
         <h5>
           Our latest work
         </h5>
-        </div>
+        </div> -->
+
+
+<div class="container" style="text-align: center">
+  <div class="row">
+<% @object["data"].each do |array| %>
+    <div class="col-xs-12 col-sm-4">
+
+  <div style="margin: 10px 0"> <%= image_tag array["images"]["standard_resolution"]["url"], width: "100%" %></div>
+
+    </div>
+<% end %>
+  </div>
+</div>
     <div class="knowledge-share">
       <ul class="row">
         <div class="shop-items row">
@@ -56,8 +64,6 @@
             </div>
           </div>
           <% end %>
-
-
         </ul>
       </div>
     </div>

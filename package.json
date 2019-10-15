@@ -1,5 +1,7 @@
 {
   "name": "moussaillon",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "instafeed.js": "^1.4.1"
+  }
 }
