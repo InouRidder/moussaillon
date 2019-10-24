@@ -22,20 +22,33 @@
         <h5>
           Our latest work
         </h5>
-        </div> -->
+      </div> -->
 
+      <!-- INSTAGRAM FETCH API -->
+      <div class="container" style="text-align: center">
+        <div class="row">
 
-<div class="container" style="text-align: center">
-  <div class="row">
-<% @object["data"].each do |array| %>
-    <div class="col-xs-12 col-sm-4">
+          <% @object["data"].each do |hash| %>
+          <div class="col-xs-12 col-sm-4">
+              <% if hash["carousel_media"] %>
+                <% final_array_of_images = [] %>
+                 <% hash["carousel_media"].each do |image| %>
+                  <% final_array_of_images << image["images"]["standard_resolution"]["url"] %>
+                  <% end %>
+                  <% final_array_of_images.each do |final_image| %>
+                      <%= image_tag final_image, width: '150px' %>
+                  <% end %>
+                  <%#= image_tag image["images"]["standard_resolution"]["url"] %>
 
-  <div style="margin: 10px 0"> <%= image_tag array["images"]["standard_resolution"]["url"], width: "100%" %></div>
-
-    </div>
-<% end %>
-  </div>
-</div>
+                <% else %>
+                   <div style="margin: 10px 0">
+                      <%= image_tag hash["images"]["standard_resolution"]["url"], width: "100%" %>
+                    </div>
+              <% end %>
+          </div>
+          <% end %>
+        </div>
+      </div>
 
     </div>
   </section>
