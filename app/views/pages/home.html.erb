@@ -1,11 +1,10 @@
 
-
 <!-- Knowledge Share -->
 <section class="home-introduction">
   <div class="container">
-
     <!-- Main Heading -->
     <div class="heading text-center">
+
       <h4>
         YOUR PLACE
         <br>
@@ -22,20 +21,61 @@
         <h5>
           Our latest work
         </h5>
-        </div> -->
+      </div> -->
+
+      <!-- INSTAGRAM FETCH API -->
+      <div class="container" style="text-align: center">
+        <div class="row">
+
+          <% @object["data"].each do |hash| %>
+
+          <% link = linkify_tag(hash['tags']) %>
 
 
-<div class="container" style="text-align: center">
-  <div class="row">
-<% @object["data"].each do |array| %>
-    <div class="col-xs-12 col-sm-4">
 
-  <div style="margin: 10px 0"> <%= image_tag array["images"]["standard_resolution"]["url"], width: "100%" %></div>
+          <div class="col-xs-12 col-sm-4">
+            <% if hash["carousel_media"] %>
 
+            <% final_array_of_images = hash["carousel_media"].map do |image| %>
+            <% image["images"]["standard_resolution"]["url"]  %>
+            <% end %>
+            <!-- CAROUSEL TO DO -->
+            <div class="owl-carousel-main owl-theme my-10">
+              <% final_array_of_images.each do |final_image| %>
+                <div class="">
+                  <a href="/collection<%= link %>">
+                    <%= image_tag final_image, width: '100%' %>
+                  </a>
+                </div>
+              <% end %>
+            </div>
+
+
+            <!-- CAROUSEL TO DO -->
+
+
+
+            <% else %>
+            <div class='my-10'>
+              <a href="/collection<%= link %>">
+                <%= image_tag hash["images"]["standard_resolution"]["url"], width: "100%" %>
+              </a>
+            </div>
+            <% end %>
+          </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-<% end %>
-  </div>
-</div>
+    <!-- Place somewhere in the <body> of your page -->
 
-    </div>
-  </section>
+    </section>
+
+
+
+
+
+
+
+
+

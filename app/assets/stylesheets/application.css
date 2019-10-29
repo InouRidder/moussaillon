@@ -22,6 +22,7 @@
  *= require theme/ionicons.min.css
  *= require theme/responsive.css
  *= require scenes.css
+ *= require pages.css
  *= require theme/main.css
  *= require theme/style.css
  *= require components/index.scss

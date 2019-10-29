@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-
+  CATEGORIES = ["eat", "sleep", "live", "sit", "cook"].freeze
   belongs_to :scene, optional: true
 
   extend FriendlyId
@@ -14,6 +14,6 @@ class Product < ApplicationRecord
   validates :name, presence: true
   validates :description, presence: true
   # validates :price, presence: true
-  validates :category, presence: true, inclusion: ["eat", "sleep", "live", "sit", "cook"]
+  validates :category, presence: true, inclusion: CATEGORIES
 
 end
