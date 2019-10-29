@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   # end
 
   def home
-    url = open("https://api.instagram.com/v1/users/self/media/recent/?access_token=3317896663.4c3b64b.b4e278d37aef4969b0d2a084380cd7d3").read
+    url = open("https://api.instagram.com/v1/users/self/media/recent/?access_token=#{ENV['INSTAGRAM_TOKEN']}").read
     @object =  JSON.parse(url)
     @latest_products = Product.last(2)
     @recent_scenes = Scene.last_2
