@@ -12,30 +12,6 @@
 
 
 
-// CAROUSEL ON HOME PAGE
 
-.owl-next {
-  color: white;
-  position: absolute;
-  font-size: 24px;
-  text-shadow: 1px 1px grey;
-  top: 45%;
-  right: 10px;
-}
 
-.owl-carousel-main {
-  position: relative;
-}
 
-.owl-prev {
-  color: white;
-  font-size: 24px;
-  position: absolute;
-  text-shadow: 1px 1px grey;
-  top: 45%;
-  left: 10px;
-}
-
-.my-10 {
-  margin: 10px 0px;
-}
