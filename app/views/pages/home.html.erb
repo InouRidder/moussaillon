@@ -32,7 +32,7 @@
           <div class="col-xs-12 col-sm-4">
               <% if hash["carousel_media"] %>
                  <% final_array_of_images = hash["carousel_media"].map do |image| %>
-                  <% image["images"]["standard_resolution"]["url"] %>
+                    <%= image["images"]["standard_resolution"]["url"]  %>
                   <% end %>
                   <% final_array_of_images.each do |final_image| %>
                       <%= image_tag final_image, width: '150px' %>
