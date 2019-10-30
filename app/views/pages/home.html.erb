@@ -26,8 +26,9 @@
       <!-- INSTAGRAM FETCH API -->
       <div class="container" style="text-align: center">
         <div class="row">
+          <%#=  text_photo = @object["data"].first['caption']['text'] %>
           <% @object["data"].each do |hash| %>
-          <% link = linkify_tag(hash['tags']) %>
+          <%# link = linkify_tag(hash['tags']) %>
 
           <div class="col-xs-12 col-sm-4">
             <% if hash["carousel_media"] %>
@@ -39,18 +40,27 @@
             <div class="owl-carousel-main owl-theme my-10">
               <% final_array_of_images.each do |final_image| %>
               <div class="">
-                <a href="/collection<%= link %>">
-                  <%= image_tag final_image, width: '100%' %>
-                </a>
+
+                <!-- <a href="/collection<%#= link %>"> -->
+                  <%= link_to final_image do %>
+
+                    <%= image_tag final_image, width: '100%' %>
+                  <% end %>
+                <!-- </a> -->
               </div>
               <% end %>
             </div>
             <!-- END : CAROUSEL TO DO -->
             <% else %>
             <div class='my-10'>
-              <a href="/collection<%= link %>">
-                <%= image_tag hash["images"]["standard_resolution"]["url"], width: "100%" %>
-              </a>
+              <!-- <a href="/collection<%#= link %>"> -->
+                <%#= image_tag hash["images"]["standard_resolution"]["url"], width: "100%" %>
+                <% img = hash["images"]["standard_resolution"]["url"] %>
+
+                <%= link_to img do  %>
+                  <%= image_tag img, width: "100%" %>
+                  <% end %>
+              <!-- </a> -->
             </div>
             <% end %>
           </div>
