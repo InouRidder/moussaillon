@@ -5,104 +5,10 @@
     <!-- Main Heading -->
     <div class="heading text-center">
 
-      <h4>
-        YOUR PLACE
-        <br>
-        YOUR DIMENSIONS
-        <br>
-        OUR DESIGN
-        <br>
-      </h4>
-      <p>
-        MOUSSAILLON - FURNITURE MAKERS
-      </p>
+    <h4> Home Page is undergoing maintenance </h4>
+    <h4> Shop still available through menu </h4>
     </div>
-        <!-- <div class="heading text-center latest-work">
-        <h5>
-          Our latest work
-        </h5>
-      </div> -->
+        
 
-      <!-- INSTAGRAM FETCH API -->
-      <div class="container" style="text-align: center">
-        <div class="row">
-          <%#=  text_photo = @object["data"].first['caption']['text'] %>
-          <% @object["data"].each do |hash| %>
-          <%# link = linkify_tag(hash['tags']) %>
-
-          <div class="col-xs-12 col-sm-4">
-            <% if hash["carousel_media"] %>
-
-            <% final_array_of_images = hash["carousel_media"].map do |image| %>
-            <% image["images"]["standard_resolution"]["url"]  %>
-            <% end %>
-            <!-- BEGINNING: CAROUSEL TO DO -->
-            <div class="owl-carousel-main owl-theme my-10">
-              <% final_array_of_images.each do |final_image| %>
-              <div class="">
-
-                <!-- <a href="/collection<%#= link %>"> -->
-                  <!-- <%= link_to final_image do %> -->
-
-                    <%= image_tag final_image, width: '100%' %>
-                  <!-- <% end %> -->
-                <!-- </a> -->
-              </div>
-              <% end %>
-            </div>
-            <!-- END : CAROUSEL TO DO -->
-            <% else %>
-            <div class='my-10'>
-              <!-- <a href="/collection<%#= link %>"> -->
-                <%#= image_tag hash["images"]["standard_resolution"]["url"], width: "100%" %>
-                <% img = hash["images"]["standard_resolution"]["url"] %>
-
-                <!-- <%= link_to img do  %> -->
-                  <%= image_tag img, width: "100%" %>
-                  <!-- <% end %> -->
-              <!-- </a> -->
-            </div>
-            <% end %>
-          </div>
-          <% end %>
-        </div>
-      </div>
     </div>
-    <!-- Place somewhere in the <body> of your page -->
-
-    </section>
-    <!-- CAROUSEL STYLE ON HOME PAGE -->
-    <style>
-      .owl-next {
-        color: white;
-        position: absolute;
-        font-size: 24px;
-        text-shadow: 1px 1px #E8E6EE;
-        top: 45%;
-        right: 10px;
-      }
-
-      .owl-prev {
-        color: white;
-        font-size: 24px;
-        position: absolute;
-        text-shadow: 1px 1px #E8E6EE;
-        top: 45%;
-        left: 10px;
-      }
-
-      .owl-carousel-main {
-        position: relative;
-      }
-
-      .my-10 {
-        margin: 10px 0px;
-      }
-    </style>
-
-
-
-
-
-
-
+</section>
