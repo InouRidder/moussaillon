@@ -6,9 +6,6 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-    <%= link_to "Scenes", scene_path(Scene.last), class: "navbar-wagon-item navbar-wagon-link" if Scene.last %>
-
     <a href="/collection" class="navbar-wagon-item navbar-wagon-link">    Collection
     </a>
     <a href="/about" class="navbar-wagon-item navbar-wagon-link">
@@ -36,9 +33,6 @@
         <i class="fa fa-bars"></i>
       </a>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li>
-          <%= link_to "SCENES", scene_path(Scene.last), class: "navbar-wagon-item navbar-wagon-link" if Scene.last %>
-        </li>
         <li>
           <a href="/collection" class="navbar-wagon-item navbar-wagon-link">    COLLECTION
           </a>
